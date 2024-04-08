@@ -1,0 +1,4402 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_253008a030955e8b70db6d29a7452214 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_253008a030955e8b70db6d29a7452214" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_253008a030955e8b70db6d29a7452214 = L.map(
+                "map_253008a030955e8b70db6d29a7452214",
+                {
+                    center: [27.056809248554917, -2.737855491329504],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1f7cc720e479f928f40fa7a79f58d55d = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_253008a030955e8b70db6d29a7452214);
+        
+    
+            var marker_cluster_15d114cbf07dae7289fdd7502d062208 = L.markerClusterGroup(
+                {}
+            );
+            map_253008a030955e8b70db6d29a7452214.addLayer(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var marker_c3d86c774e0c87192511c5585afb09aa = L.marker(
+                [33.678, -106.475],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_bcaddb8592d9d77262915b64e8be0bfc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c3d86c774e0c87192511c5585afb09aa.setIcon(icon_bcaddb8592d9d77262915b64e8be0bfc);
+        
+    
+        var popup_528a51e1164225da5e55f5c2aa63ad62 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b534c499a8e646aca88c4a53ec18b3e8 = $(`<div id="html_b534c499a8e646aca88c4a53ec18b3e8" style="width: 100.0%; height: 100.0%;"><b>Trinity</b><br>Date: 07/16/1945<br>Yield: 21 kt</div>`)[0];
+            popup_528a51e1164225da5e55f5c2aa63ad62.setContent(html_b534c499a8e646aca88c4a53ec18b3e8);
+        
+
+        marker_c3d86c774e0c87192511c5585afb09aa.bindPopup(popup_528a51e1164225da5e55f5c2aa63ad62)
+        ;
+
+        
+    
+    
+            var marker_ed687c0d9861eb375b3ced810f12e090 = L.marker(
+                [11.567, 165.383],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_6c8377e03fd5f44f10e750431c734eb4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ed687c0d9861eb375b3ced810f12e090.setIcon(icon_6c8377e03fd5f44f10e750431c734eb4);
+        
+    
+        var popup_14b47ad66eba5d06ca28dd947aebb906 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_42e3c96a9a1437e2f2f703292963c8dd = $(`<div id="html_42e3c96a9a1437e2f2f703292963c8dd" style="width: 100.0%; height: 100.0%;"><b>Able</b><br>Date: 06/30/1946<br>Yield: 21 kt</div>`)[0];
+            popup_14b47ad66eba5d06ca28dd947aebb906.setContent(html_42e3c96a9a1437e2f2f703292963c8dd);
+        
+
+        marker_ed687c0d9861eb375b3ced810f12e090.bindPopup(popup_14b47ad66eba5d06ca28dd947aebb906)
+        ;
+
+        
+    
+    
+            var marker_d3d7d8b72c91a02a9270baa70d8b3d16 = L.marker(
+                [11.567, 165.383],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_92295b06b0a9f44db6cbf68add521c84 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d3d7d8b72c91a02a9270baa70d8b3d16.setIcon(icon_92295b06b0a9f44db6cbf68add521c84);
+        
+    
+        var popup_b3f5a3c8129fb27d3b944168aac4628f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_585bb36d4efec044f4a060b356d05568 = $(`<div id="html_585bb36d4efec044f4a060b356d05568" style="width: 100.0%; height: 100.0%;"><b>Baker</b><br>Date: 07/24/1946<br>Yield: 21 kt</div>`)[0];
+            popup_b3f5a3c8129fb27d3b944168aac4628f.setContent(html_585bb36d4efec044f4a060b356d05568);
+        
+
+        marker_d3d7d8b72c91a02a9270baa70d8b3d16.bindPopup(popup_b3f5a3c8129fb27d3b944168aac4628f)
+        ;
+
+        
+    
+    
+            var marker_057a5ea3fdcec6aa40db7193ec6895d2 = L.marker(
+                [11.667, 162.35],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_a85bcded058b47fe03151022f30fc6d5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_057a5ea3fdcec6aa40db7193ec6895d2.setIcon(icon_a85bcded058b47fe03151022f30fc6d5);
+        
+    
+        var popup_889891cd3c21167e6df85b85a056001d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_13bebfd90f13f30252f83de05d352dad = $(`<div id="html_13bebfd90f13f30252f83de05d352dad" style="width: 100.0%; height: 100.0%;"><b>X-Ray</b><br>Date: 04/14/1948<br>Yield: 37 kt</div>`)[0];
+            popup_889891cd3c21167e6df85b85a056001d.setContent(html_13bebfd90f13f30252f83de05d352dad);
+        
+
+        marker_057a5ea3fdcec6aa40db7193ec6895d2.bindPopup(popup_889891cd3c21167e6df85b85a056001d)
+        ;
+
+        
+    
+    
+            var marker_fdaf8941435fdbe495b1ea9e90bb82db = L.marker(
+                [11.667, 162.35],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_3bce6ca00b85e1c6ad930019f3d78c3c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_fdaf8941435fdbe495b1ea9e90bb82db.setIcon(icon_3bce6ca00b85e1c6ad930019f3d78c3c);
+        
+    
+        var popup_fe452d1bc0af2335b71bc8807248c4e8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bf84f2d234494a4560c170561fd5b439 = $(`<div id="html_bf84f2d234494a4560c170561fd5b439" style="width: 100.0%; height: 100.0%;"><b>Yoke</b><br>Date: 04/30/1948<br>Yield: 49 kt</div>`)[0];
+            popup_fe452d1bc0af2335b71bc8807248c4e8.setContent(html_bf84f2d234494a4560c170561fd5b439);
+        
+
+        marker_fdaf8941435fdbe495b1ea9e90bb82db.bindPopup(popup_fe452d1bc0af2335b71bc8807248c4e8)
+        ;
+
+        
+    
+    
+            var marker_b6cede06dd2ec5f0fb995c13ac960ebb = L.marker(
+                [11.667, 162.35],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_e3583b744af4d4d6b9516990f9b011fc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b6cede06dd2ec5f0fb995c13ac960ebb.setIcon(icon_e3583b744af4d4d6b9516990f9b011fc);
+        
+    
+        var popup_c31869a63a88d15b7b7ad75e1b48e51d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3b855afbfc21ba916fce50de18848b44 = $(`<div id="html_3b855afbfc21ba916fce50de18848b44" style="width: 100.0%; height: 100.0%;"><b>Zebra</b><br>Date: 05/14/1948<br>Yield: 18 kt</div>`)[0];
+            popup_c31869a63a88d15b7b7ad75e1b48e51d.setContent(html_3b855afbfc21ba916fce50de18848b44);
+        
+
+        marker_b6cede06dd2ec5f0fb995c13ac960ebb.bindPopup(popup_c31869a63a88d15b7b7ad75e1b48e51d)
+        ;
+
+        
+    
+    
+            var marker_b997d94ac9734c116b0e0da2f2bd6b3c = L.marker(
+                [37.168, -116.043],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_20cd4cc4e13285975381b998103e2165 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b997d94ac9734c116b0e0da2f2bd6b3c.setIcon(icon_20cd4cc4e13285975381b998103e2165);
+        
+    
+        var popup_6531508a88ad38ce3762870b927a7e6f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e79e74ae6c22496ac0a60908d8230e02 = $(`<div id="html_e79e74ae6c22496ac0a60908d8230e02" style="width: 100.0%; height: 100.0%;"><b>Able</b><br>Date: 01/27/1951<br>Yield: 8 kt</div>`)[0];
+            popup_6531508a88ad38ce3762870b927a7e6f.setContent(html_e79e74ae6c22496ac0a60908d8230e02);
+        
+
+        marker_b997d94ac9734c116b0e0da2f2bd6b3c.bindPopup(popup_6531508a88ad38ce3762870b927a7e6f)
+        ;
+
+        
+    
+    
+            var marker_505ff58e64ab301f1e636a67cce3ac70 = L.marker(
+                [37.168, -116.043],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_0f91172213f50cd4d9ce3ac44884c215 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_505ff58e64ab301f1e636a67cce3ac70.setIcon(icon_0f91172213f50cd4d9ce3ac44884c215);
+        
+    
+        var popup_38e1df2771901bd2595569acf0d9e38a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_27e035b3e6bdb46c09472b04cf12817c = $(`<div id="html_27e035b3e6bdb46c09472b04cf12817c" style="width: 100.0%; height: 100.0%;"><b>Baker</b><br>Date: 01/28/1951<br>Yield: 8 kt</div>`)[0];
+            popup_38e1df2771901bd2595569acf0d9e38a.setContent(html_27e035b3e6bdb46c09472b04cf12817c);
+        
+
+        marker_505ff58e64ab301f1e636a67cce3ac70.bindPopup(popup_38e1df2771901bd2595569acf0d9e38a)
+        ;
+
+        
+    
+    
+            var marker_9d6d7790e40c24f99b8790256a92370f = L.marker(
+                [37.168, -116.043],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_028512e0e9ca7a5ba09de89fcb746b53 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_9d6d7790e40c24f99b8790256a92370f.setIcon(icon_028512e0e9ca7a5ba09de89fcb746b53);
+        
+    
+        var popup_5922f063c925321b607e453f935ed2c6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1ae9be2bf86e109c801159c77fe4c352 = $(`<div id="html_1ae9be2bf86e109c801159c77fe4c352" style="width: 100.0%; height: 100.0%;"><b>Easy</b><br>Date: 02/01/1951<br>Yield: 1 kt</div>`)[0];
+            popup_5922f063c925321b607e453f935ed2c6.setContent(html_1ae9be2bf86e109c801159c77fe4c352);
+        
+
+        marker_9d6d7790e40c24f99b8790256a92370f.bindPopup(popup_5922f063c925321b607e453f935ed2c6)
+        ;
+
+        
+    
+    
+            var marker_fdeac41731b7f4b5ad22de0b1cae088a = L.marker(
+                [37.168, -116.043],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_ec2fe57b81212b78d23acb24ff56c53c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_fdeac41731b7f4b5ad22de0b1cae088a.setIcon(icon_ec2fe57b81212b78d23acb24ff56c53c);
+        
+    
+        var popup_e69d6806b3f486cd6683a60a0ea5dd77 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4858233c8ce05117b0f9d0d847263840 = $(`<div id="html_4858233c8ce05117b0f9d0d847263840" style="width: 100.0%; height: 100.0%;"><b>Baker-2</b><br>Date: 02/02/1951<br>Yield: 22 kt</div>`)[0];
+            popup_e69d6806b3f486cd6683a60a0ea5dd77.setContent(html_4858233c8ce05117b0f9d0d847263840);
+        
+
+        marker_fdeac41731b7f4b5ad22de0b1cae088a.bindPopup(popup_e69d6806b3f486cd6683a60a0ea5dd77)
+        ;
+
+        
+    
+    
+            var marker_0bb0d72274cb81c388c628c17103c811 = L.marker(
+                [37.168, -116.043],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_721fda1bf2e845b94f6fdae837418145 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_0bb0d72274cb81c388c628c17103c811.setIcon(icon_721fda1bf2e845b94f6fdae837418145);
+        
+    
+        var popup_5873ff899dc395356cf0d7f87ad17ced = L.popup({"maxWidth": "100%"});
+
+        
+            var html_986741497c486c82e26f29e9d5d30b58 = $(`<div id="html_986741497c486c82e26f29e9d5d30b58" style="width: 100.0%; height: 100.0%;"><b>Fox</b><br>Date: 02/06/1951<br>Yield: 1 kt</div>`)[0];
+            popup_5873ff899dc395356cf0d7f87ad17ced.setContent(html_986741497c486c82e26f29e9d5d30b58);
+        
+
+        marker_0bb0d72274cb81c388c628c17103c811.bindPopup(popup_5873ff899dc395356cf0d7f87ad17ced)
+        ;
+
+        
+    
+    
+            var marker_c6a5b195dc82a6d01fbf754947cb2877 = L.marker(
+                [11.667, 162.35],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_3f1db76decf1543960dbf48ac5b065b7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c6a5b195dc82a6d01fbf754947cb2877.setIcon(icon_3f1db76decf1543960dbf48ac5b065b7);
+        
+    
+        var popup_169ee4d8626ff19249b6e53c0b4a4e5f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_182c06f2ad6134fbb0ab590fe31118e4 = $(`<div id="html_182c06f2ad6134fbb0ab590fe31118e4" style="width: 100.0%; height: 100.0%;"><b>Dog</b><br>Date: 04/07/1951<br>Yield: 47 kt</div>`)[0];
+            popup_169ee4d8626ff19249b6e53c0b4a4e5f.setContent(html_182c06f2ad6134fbb0ab590fe31118e4);
+        
+
+        marker_c6a5b195dc82a6d01fbf754947cb2877.bindPopup(popup_169ee4d8626ff19249b6e53c0b4a4e5f)
+        ;
+
+        
+    
+    
+            var marker_81daa1bd21f7a90ce4d2384d6e01f855 = L.marker(
+                [11.667, 162.35],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_a87bf879c349cb29ca59214ef28328a2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_81daa1bd21f7a90ce4d2384d6e01f855.setIcon(icon_a87bf879c349cb29ca59214ef28328a2);
+        
+    
+        var popup_b768b592f523489d009decb0d2537084 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4d1c23b2cb8dea4cdf6e5d73b4107ea1 = $(`<div id="html_4d1c23b2cb8dea4cdf6e5d73b4107ea1" style="width: 100.0%; height: 100.0%;"><b>Easy</b><br>Date: 04/20/1951<br>Yield: 225 kt</div>`)[0];
+            popup_b768b592f523489d009decb0d2537084.setContent(html_4d1c23b2cb8dea4cdf6e5d73b4107ea1);
+        
+
+        marker_81daa1bd21f7a90ce4d2384d6e01f855.bindPopup(popup_b768b592f523489d009decb0d2537084)
+        ;
+
+        
+    
+    
+            var marker_7f7dbdce0d632e4810e9caef6baab5c9 = L.marker(
+                [11.667, 162.35],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_f584c32dd4bdb8a774d7d3e565e53615 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_7f7dbdce0d632e4810e9caef6baab5c9.setIcon(icon_f584c32dd4bdb8a774d7d3e565e53615);
+        
+    
+        var popup_a7d315f70234601e05a9195d81412346 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_781038970b31f276f1b380c27a8385d9 = $(`<div id="html_781038970b31f276f1b380c27a8385d9" style="width: 100.0%; height: 100.0%;"><b>George</b><br>Date: 05/08/1951<br>Yield: 45.5 kt</div>`)[0];
+            popup_a7d315f70234601e05a9195d81412346.setContent(html_781038970b31f276f1b380c27a8385d9);
+        
+
+        marker_7f7dbdce0d632e4810e9caef6baab5c9.bindPopup(popup_a7d315f70234601e05a9195d81412346)
+        ;
+
+        
+    
+    
+            var marker_d7dab684d7e698f2f38ce20e12601566 = L.marker(
+                [11.667, 162.35],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_38eacb6643fbfdcb17d14fc45c92b078 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d7dab684d7e698f2f38ce20e12601566.setIcon(icon_38eacb6643fbfdcb17d14fc45c92b078);
+        
+    
+        var popup_2b309681d05d1bae6226f4405b158cb2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7c810f320163b7115b8777ba18bb74af = $(`<div id="html_7c810f320163b7115b8777ba18bb74af" style="width: 100.0%; height: 100.0%;"><b>Item</b><br>Date: 05/24/1951<br>Yield: 0.1 kt</div>`)[0];
+            popup_2b309681d05d1bae6226f4405b158cb2.setContent(html_7c810f320163b7115b8777ba18bb74af);
+        
+
+        marker_d7dab684d7e698f2f38ce20e12601566.bindPopup(popup_2b309681d05d1bae6226f4405b158cb2)
+        ;
+
+        
+    
+    
+            var marker_69c520defb120dbd24c5d07c7f326ad1 = L.marker(
+                [37.17, -116.045],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_e385ef9412f2f258d8a8033e8ad513ab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_69c520defb120dbd24c5d07c7f326ad1.setIcon(icon_e385ef9412f2f258d8a8033e8ad513ab);
+        
+    
+        var popup_8bdfbe8b0732509a13ad1cdc101cf904 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_46ecd40a97054b7417877b0af11577f7 = $(`<div id="html_46ecd40a97054b7417877b0af11577f7" style="width: 100.0%; height: 100.0%;"><b>Able</b><br>Date: 10/22/1951<br>Yield: 3.5 kt</div>`)[0];
+            popup_8bdfbe8b0732509a13ad1cdc101cf904.setContent(html_46ecd40a97054b7417877b0af11577f7);
+        
+
+        marker_69c520defb120dbd24c5d07c7f326ad1.bindPopup(popup_8bdfbe8b0732509a13ad1cdc101cf904)
+        ;
+
+        
+    
+    
+            var marker_9d07b22eaf8c675691d5462c31b25b5b = L.marker(
+                [37.17, -116.045],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_2677e6a91c4408be3261c5ef7b55ea1b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_9d07b22eaf8c675691d5462c31b25b5b.setIcon(icon_2677e6a91c4408be3261c5ef7b55ea1b);
+        
+    
+        var popup_df218dc8af0f5af09fe17be3c8374df7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c9119edc6f07cdc3e549a049357f66e9 = $(`<div id="html_c9119edc6f07cdc3e549a049357f66e9" style="width: 100.0%; height: 100.0%;"><b>Baker</b><br>Date: 10/28/1951<br>Yield: 14 kt</div>`)[0];
+            popup_df218dc8af0f5af09fe17be3c8374df7.setContent(html_c9119edc6f07cdc3e549a049357f66e9);
+        
+
+        marker_9d07b22eaf8c675691d5462c31b25b5b.bindPopup(popup_df218dc8af0f5af09fe17be3c8374df7)
+        ;
+
+        
+    
+    
+            var marker_573bce8d844984e12b5e1fc206e6b46f = L.marker(
+                [37.17, -116.045],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_15e5d3a9e1b4d958db3d24cb0a2efa59 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_573bce8d844984e12b5e1fc206e6b46f.setIcon(icon_15e5d3a9e1b4d958db3d24cb0a2efa59);
+        
+    
+        var popup_b565e2790405ee074fe8270ec11b4b03 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f7d07b5049eb63e427ed4a5ec2a6a6bb = $(`<div id="html_f7d07b5049eb63e427ed4a5ec2a6a6bb" style="width: 100.0%; height: 100.0%;"><b>Charlie</b><br>Date: 10/30/1951<br>Yield: 21 kt</div>`)[0];
+            popup_b565e2790405ee074fe8270ec11b4b03.setContent(html_f7d07b5049eb63e427ed4a5ec2a6a6bb);
+        
+
+        marker_573bce8d844984e12b5e1fc206e6b46f.bindPopup(popup_b565e2790405ee074fe8270ec11b4b03)
+        ;
+
+        
+    
+    
+            var marker_e4c085db52e471d4a06a4832fe7ecea6 = L.marker(
+                [37.17, -116.045],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_5781f05eb2b2aa77d5c332e7fdb6a9e9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e4c085db52e471d4a06a4832fe7ecea6.setIcon(icon_5781f05eb2b2aa77d5c332e7fdb6a9e9);
+        
+    
+        var popup_841b4408e0c38e64d358b2a6bce28366 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_635fc3ae5e80ecfa6e348a06198c5378 = $(`<div id="html_635fc3ae5e80ecfa6e348a06198c5378" style="width: 100.0%; height: 100.0%;"><b>Dog</b><br>Date: 11/01/1951<br>Yield: 31 kt</div>`)[0];
+            popup_841b4408e0c38e64d358b2a6bce28366.setContent(html_635fc3ae5e80ecfa6e348a06198c5378);
+        
+
+        marker_e4c085db52e471d4a06a4832fe7ecea6.bindPopup(popup_841b4408e0c38e64d358b2a6bce28366)
+        ;
+
+        
+    
+    
+            var marker_17811d7c8dd2d3cb691a9a7f5f87a109 = L.marker(
+                [37.17, -116.045],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_de10b25ef482915acb3a86754d82c43c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_17811d7c8dd2d3cb691a9a7f5f87a109.setIcon(icon_de10b25ef482915acb3a86754d82c43c);
+        
+    
+        var popup_3f774fd158a426fa1aa26e7dc6548ea1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a672ee439f2a6f1aecc65615239416f2 = $(`<div id="html_a672ee439f2a6f1aecc65615239416f2" style="width: 100.0%; height: 100.0%;"><b>Easy</b><br>Date: 11/05/1951<br>Yield: 1 kt</div>`)[0];
+            popup_3f774fd158a426fa1aa26e7dc6548ea1.setContent(html_a672ee439f2a6f1aecc65615239416f2);
+        
+
+        marker_17811d7c8dd2d3cb691a9a7f5f87a109.bindPopup(popup_3f774fd158a426fa1aa26e7dc6548ea1)
+        ;
+
+        
+    
+    
+            var marker_a3db18b6672c5d1cd1e6fe8598a5bb61 = L.marker(
+                [37.168, -116.043],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_8923d87348af9a1b6e92b346fbb0dd76 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a3db18b6672c5d1cd1e6fe8598a5bb61.setIcon(icon_8923d87348af9a1b6e92b346fbb0dd76);
+        
+    
+        var popup_107a59a5d8600b3d9f43013844d96c97 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_425b5c2f3e239df0465cc31916b4eb49 = $(`<div id="html_425b5c2f3e239df0465cc31916b4eb49" style="width: 100.0%; height: 100.0%;"><b>Sugar</b><br>Date: 11/19/1951<br>Yield: 1.2 kt</div>`)[0];
+            popup_107a59a5d8600b3d9f43013844d96c97.setContent(html_425b5c2f3e239df0465cc31916b4eb49);
+        
+
+        marker_a3db18b6672c5d1cd1e6fe8598a5bb61.bindPopup(popup_107a59a5d8600b3d9f43013844d96c97)
+        ;
+
+        
+    
+    
+            var marker_11e4712a0ba95ad57a1529e3204632b1 = L.marker(
+                [37.226, -116.06],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_1553f71a773049000287f6217f76cdcd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_11e4712a0ba95ad57a1529e3204632b1.setIcon(icon_1553f71a773049000287f6217f76cdcd);
+        
+    
+        var popup_3e82bc8885cc92177d39f6b1f6638384 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_98f3fea2b3392291c15fd6c93b474120 = $(`<div id="html_98f3fea2b3392291c15fd6c93b474120" style="width: 100.0%; height: 100.0%;"><b>Uncle</b><br>Date: 11/29/1951<br>Yield: 1.2 kt</div>`)[0];
+            popup_3e82bc8885cc92177d39f6b1f6638384.setContent(html_98f3fea2b3392291c15fd6c93b474120);
+        
+
+        marker_11e4712a0ba95ad57a1529e3204632b1.bindPopup(popup_3e82bc8885cc92177d39f6b1f6638384)
+        ;
+
+        
+    
+    
+            var marker_989c6da9cb397e9cfc13c9afa49e4e08 = L.marker(
+                [37.168, -116.043],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_e4f2cd34d10fda50726e145a108c8fe7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_989c6da9cb397e9cfc13c9afa49e4e08.setIcon(icon_e4f2cd34d10fda50726e145a108c8fe7);
+        
+    
+        var popup_780582fcdcb138ca345d41736c1950d4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d5e88bea8e4ef17f975229c8b7cb30dc = $(`<div id="html_d5e88bea8e4ef17f975229c8b7cb30dc" style="width: 100.0%; height: 100.0%;"><b>Able</b><br>Date: 04/01/1952<br>Yield: 1 kt</div>`)[0];
+            popup_780582fcdcb138ca345d41736c1950d4.setContent(html_d5e88bea8e4ef17f975229c8b7cb30dc);
+        
+
+        marker_989c6da9cb397e9cfc13c9afa49e4e08.bindPopup(popup_780582fcdcb138ca345d41736c1950d4)
+        ;
+
+        
+    
+    
+            var marker_1cbf8ffbd971010d63e8bd115f28ce97 = L.marker(
+                [37.17, -116.045],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_5bad139fb1a43f256ae3f545dd8460e8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_1cbf8ffbd971010d63e8bd115f28ce97.setIcon(icon_5bad139fb1a43f256ae3f545dd8460e8);
+        
+    
+        var popup_3d3ae86148db47e0925f897066fc3738 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_068cc75df289ae8ea3197715c94964fd = $(`<div id="html_068cc75df289ae8ea3197715c94964fd" style="width: 100.0%; height: 100.0%;"><b>Baker</b><br>Date: 04/15/1952<br>Yield: 31 kt</div>`)[0];
+            popup_3d3ae86148db47e0925f897066fc3738.setContent(html_068cc75df289ae8ea3197715c94964fd);
+        
+
+        marker_1cbf8ffbd971010d63e8bd115f28ce97.bindPopup(popup_3d3ae86148db47e0925f897066fc3738)
+        ;
+
+        
+    
+    
+            var marker_7283f2a110394f7ea5d06d4af9cb6b58 = L.marker(
+                [37.17, -116.045],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_abd4e56bd2d9238537065a12082e4f92 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_7283f2a110394f7ea5d06d4af9cb6b58.setIcon(icon_abd4e56bd2d9238537065a12082e4f92);
+        
+    
+        var popup_ff0085cf3b166d6580b6dd87beb3ba0f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0b7b0f54c1e480150ebe8d1ab6ff8a55 = $(`<div id="html_0b7b0f54c1e480150ebe8d1ab6ff8a55" style="width: 100.0%; height: 100.0%;"><b>Charlie</b><br>Date: 04/22/1952<br>Yield: 19 kt</div>`)[0];
+            popup_ff0085cf3b166d6580b6dd87beb3ba0f.setContent(html_0b7b0f54c1e480150ebe8d1ab6ff8a55);
+        
+
+        marker_7283f2a110394f7ea5d06d4af9cb6b58.bindPopup(popup_ff0085cf3b166d6580b6dd87beb3ba0f)
+        ;
+
+        
+    
+    
+            var marker_9db71114c881ad03e386e5b4f778fc22 = L.marker(
+                [37.17, -116.045],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_ae78e34d8b785598228a0016b4574b16 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_9db71114c881ad03e386e5b4f778fc22.setIcon(icon_ae78e34d8b785598228a0016b4574b16);
+        
+    
+        var popup_60e8d6963586c5fbd075d6c26f53f074 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_25a00fdf4f8e2555591a9f9746b919ff = $(`<div id="html_25a00fdf4f8e2555591a9f9746b919ff" style="width: 100.0%; height: 100.0%;"><b>Dog</b><br>Date: 05/01/1952<br>Yield: 12 kt</div>`)[0];
+            popup_60e8d6963586c5fbd075d6c26f53f074.setContent(html_25a00fdf4f8e2555591a9f9746b919ff);
+        
+
+        marker_9db71114c881ad03e386e5b4f778fc22.bindPopup(popup_60e8d6963586c5fbd075d6c26f53f074)
+        ;
+
+        
+    
+    
+            var marker_affa7f221067fb96fd0ca625a7960459 = L.marker(
+                [37.17, -116.045],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_9232aa0ecee5657b4340efcddf8f0e52 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_affa7f221067fb96fd0ca625a7960459.setIcon(icon_9232aa0ecee5657b4340efcddf8f0e52);
+        
+    
+        var popup_672af30afedde10c5c45b8da972d03c1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_da5324565cd8f872ac3467f5239be58d = $(`<div id="html_da5324565cd8f872ac3467f5239be58d" style="width: 100.0%; height: 100.0%;"><b>Easy</b><br>Date: 05/07/1952<br>Yield: 11 kt</div>`)[0];
+            popup_672af30afedde10c5c45b8da972d03c1.setContent(html_da5324565cd8f872ac3467f5239be58d);
+        
+
+        marker_affa7f221067fb96fd0ca625a7960459.bindPopup(popup_672af30afedde10c5c45b8da972d03c1)
+        ;
+
+        
+    
+    
+            var marker_933de9b649a0fc9a7678ac267d4d5c6e = L.marker(
+                [37.17, -116.045],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_fdc79840f24317d1fe33464ab92998b5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_933de9b649a0fc9a7678ac267d4d5c6e.setIcon(icon_fdc79840f24317d1fe33464ab92998b5);
+        
+    
+        var popup_55bbb9fa796dc4e333d10a3fd9979621 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9c0cebf4224ffb0111b200ee5c5b9430 = $(`<div id="html_9c0cebf4224ffb0111b200ee5c5b9430" style="width: 100.0%; height: 100.0%;"><b>Fox</b><br>Date: 05/25/1952<br>Yield: 15 kt</div>`)[0];
+            popup_55bbb9fa796dc4e333d10a3fd9979621.setContent(html_9c0cebf4224ffb0111b200ee5c5b9430);
+        
+
+        marker_933de9b649a0fc9a7678ac267d4d5c6e.bindPopup(popup_55bbb9fa796dc4e333d10a3fd9979621)
+        ;
+
+        
+    
+    
+            var marker_bbfc406455fe597f4340ea673d2b7aa1 = L.marker(
+                [37.17, -116.045],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_ac4d8b924348033efcd79b1a67e9b5c9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_bbfc406455fe597f4340ea673d2b7aa1.setIcon(icon_ac4d8b924348033efcd79b1a67e9b5c9);
+        
+    
+        var popup_e488c4be57654b7caa4b323cda9e5116 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_34e5c5b21e3bcc5bffb479d3458ea91a = $(`<div id="html_34e5c5b21e3bcc5bffb479d3458ea91a" style="width: 100.0%; height: 100.0%;"><b>George</b><br>Date: 06/01/1952<br>Yield: 14 kt</div>`)[0];
+            popup_e488c4be57654b7caa4b323cda9e5116.setContent(html_34e5c5b21e3bcc5bffb479d3458ea91a);
+        
+
+        marker_bbfc406455fe597f4340ea673d2b7aa1.bindPopup(popup_e488c4be57654b7caa4b323cda9e5116)
+        ;
+
+        
+    
+    
+            var marker_348f35326724c8455be1017cf9d206d9 = L.marker(
+                [37.17, -116.045],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_15dfd59d5641323b2a6edb094aeb3359 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_348f35326724c8455be1017cf9d206d9.setIcon(icon_15dfd59d5641323b2a6edb094aeb3359);
+        
+    
+        var popup_1205a97cf7a7e90e7e8e18fa653e7cb9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aad1d26dd4429a1851a8fbe720849433 = $(`<div id="html_aad1d26dd4429a1851a8fbe720849433" style="width: 100.0%; height: 100.0%;"><b>How</b><br>Date: 06/05/1952<br>Yield: 10.4 Mt</div>`)[0];
+            popup_1205a97cf7a7e90e7e8e18fa653e7cb9.setContent(html_aad1d26dd4429a1851a8fbe720849433);
+        
+
+        marker_348f35326724c8455be1017cf9d206d9.bindPopup(popup_1205a97cf7a7e90e7e8e18fa653e7cb9)
+        ;
+
+        
+    
+    
+            var marker_6a342708cc8edcc2d3513e3d63c2671e = L.marker(
+                [11.667, 162.35],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_50f51f9971f58860282e92c82b6a7380 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_6a342708cc8edcc2d3513e3d63c2671e.setIcon(icon_50f51f9971f58860282e92c82b6a7380);
+        
+    
+        var popup_83865b1f4a11f7519db5f280812db0d1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aedaf04df1a210de2b1d513052e36aca = $(`<div id="html_aedaf04df1a210de2b1d513052e36aca" style="width: 100.0%; height: 100.0%;"><b>Mike</b><br>Date: 10/31/1952<br>Yield: 500 kt</div>`)[0];
+            popup_83865b1f4a11f7519db5f280812db0d1.setContent(html_aedaf04df1a210de2b1d513052e36aca);
+        
+
+        marker_6a342708cc8edcc2d3513e3d63c2671e.bindPopup(popup_83865b1f4a11f7519db5f280812db0d1)
+        ;
+
+        
+    
+    
+            var marker_f681347e9c04bf3aaef985c3795747df = L.marker(
+                [11.567, 165.383],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_6d5f21ca3d259b9752ae7c5855c5582c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f681347e9c04bf3aaef985c3795747df.setIcon(icon_6d5f21ca3d259b9752ae7c5855c5582c);
+        
+    
+        var popup_64890e9784a5f0d2407f6910af717a9d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f096a26a9c32e73b00fe8c7b7c51c651 = $(`<div id="html_f096a26a9c32e73b00fe8c7b7c51c651" style="width: 100.0%; height: 100.0%;"><b>King</b><br>Date: 11/15/1952<br>Yield: 16 kt</div>`)[0];
+            popup_64890e9784a5f0d2407f6910af717a9d.setContent(html_f096a26a9c32e73b00fe8c7b7c51c651);
+        
+
+        marker_f681347e9c04bf3aaef985c3795747df.bindPopup(popup_64890e9784a5f0d2407f6910af717a9d)
+        ;
+
+        
+    
+    
+            var marker_1b17189505ecb560a33f4e29e593c7dd = L.marker(
+                [37.17, -116.045],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_e690d16c3e6abdd3875d8fb1132abd56 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_1b17189505ecb560a33f4e29e593c7dd.setIcon(icon_e690d16c3e6abdd3875d8fb1132abd56);
+        
+    
+        var popup_76e1aa8a478afea3a60fb1465626bd58 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4df4e84f2a6b87c5750b23f2e984d993 = $(`<div id="html_4df4e84f2a6b87c5750b23f2e984d993" style="width: 100.0%; height: 100.0%;"><b>Annie</b><br>Date: 03/17/1953<br>Yield: 24 kt</div>`)[0];
+            popup_76e1aa8a478afea3a60fb1465626bd58.setContent(html_4df4e84f2a6b87c5750b23f2e984d993);
+        
+
+        marker_1b17189505ecb560a33f4e29e593c7dd.bindPopup(popup_76e1aa8a478afea3a60fb1465626bd58)
+        ;
+
+        
+    
+    
+            var marker_66e214c1920dc9f81c588e201b3159b0 = L.marker(
+                [37.17, -116.045],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_c585562fae68dd1fa30ce56632e4d3a1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_66e214c1920dc9f81c588e201b3159b0.setIcon(icon_c585562fae68dd1fa30ce56632e4d3a1);
+        
+    
+        var popup_92a4b92ae234d7425ce7ad79ef307fbd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7ca0b4e61cadb492c97343d32b222408 = $(`<div id="html_7ca0b4e61cadb492c97343d32b222408" style="width: 100.0%; height: 100.0%;"><b>Nancy</b><br>Date: 03/24/1953<br>Yield: 0.2 kt</div>`)[0];
+            popup_92a4b92ae234d7425ce7ad79ef307fbd.setContent(html_7ca0b4e61cadb492c97343d32b222408);
+        
+
+        marker_66e214c1920dc9f81c588e201b3159b0.bindPopup(popup_92a4b92ae234d7425ce7ad79ef307fbd)
+        ;
+
+        
+    
+    
+            var marker_b92e62a82c557bc22e9c2264e9fff080 = L.marker(
+                [37.17, -116.045],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_fa8e16d13e0abf0721d1cda3eb346f9e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b92e62a82c557bc22e9c2264e9fff080.setIcon(icon_fa8e16d13e0abf0721d1cda3eb346f9e);
+        
+    
+        var popup_6d26feb02560eb09f8a10cde5f9af0b1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5e6ee02bc71fc6e3cce90847d9858f08 = $(`<div id="html_5e6ee02bc71fc6e3cce90847d9858f08" style="width: 100.0%; height: 100.0%;"><b>Ruth</b><br>Date: 03/31/1953<br>Yield: 11 kt</div>`)[0];
+            popup_6d26feb02560eb09f8a10cde5f9af0b1.setContent(html_5e6ee02bc71fc6e3cce90847d9858f08);
+        
+
+        marker_b92e62a82c557bc22e9c2264e9fff080.bindPopup(popup_6d26feb02560eb09f8a10cde5f9af0b1)
+        ;
+
+        
+    
+    
+            var marker_b4baa50fd53b5d895f98cbf7b7de8f23 = L.marker(
+                [37.17, -116.045],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_18e6428dae9a524c948bdf4b90e1b07c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b4baa50fd53b5d895f98cbf7b7de8f23.setIcon(icon_18e6428dae9a524c948bdf4b90e1b07c);
+        
+    
+        var popup_2cdabe6ddf63b203848c257e6f3d2769 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ff0680549012c6fc1deb0d6806c6d803 = $(`<div id="html_ff0680549012c6fc1deb0d6806c6d803" style="width: 100.0%; height: 100.0%;"><b>Dixie</b><br>Date: 04/06/1953<br>Yield: 0.2 kt</div>`)[0];
+            popup_2cdabe6ddf63b203848c257e6f3d2769.setContent(html_ff0680549012c6fc1deb0d6806c6d803);
+        
+
+        marker_b4baa50fd53b5d895f98cbf7b7de8f23.bindPopup(popup_2cdabe6ddf63b203848c257e6f3d2769)
+        ;
+
+        
+    
+    
+            var marker_71003312d5a6b1764da418e96a56dd74 = L.marker(
+                [37.17, -116.045],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_40bdeed965eb406b130e1b1e49e16a9c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_71003312d5a6b1764da418e96a56dd74.setIcon(icon_40bdeed965eb406b130e1b1e49e16a9c);
+        
+    
+        var popup_38ca09fd44828ab99b30a7b0010a24f2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bdc46734443e4d47602b349be0fa1130 = $(`<div id="html_bdc46734443e4d47602b349be0fa1130" style="width: 100.0%; height: 100.0%;"><b>Ray</b><br>Date: 04/11/1953<br>Yield: 23 kt</div>`)[0];
+            popup_38ca09fd44828ab99b30a7b0010a24f2.setContent(html_bdc46734443e4d47602b349be0fa1130);
+        
+
+        marker_71003312d5a6b1764da418e96a56dd74.bindPopup(popup_38ca09fd44828ab99b30a7b0010a24f2)
+        ;
+
+        
+    
+    
+            var marker_defdce2ab2aaca6516a3a776a51288bc = L.marker(
+                [37.17, -116.045],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_1d75ab0cc6c9bda06f072519017f93f5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_defdce2ab2aaca6516a3a776a51288bc.setIcon(icon_1d75ab0cc6c9bda06f072519017f93f5);
+        
+    
+        var popup_e5a2c1c62e33ebf4b7c067d12a72a939 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a2de0f1d0148ce505b7d67f77c686982 = $(`<div id="html_a2de0f1d0148ce505b7d67f77c686982" style="width: 100.0%; height: 100.0%;"><b>Badger</b><br>Date: 04/18/1953<br>Yield: 43 kt</div>`)[0];
+            popup_e5a2c1c62e33ebf4b7c067d12a72a939.setContent(html_a2de0f1d0148ce505b7d67f77c686982);
+        
+
+        marker_defdce2ab2aaca6516a3a776a51288bc.bindPopup(popup_e5a2c1c62e33ebf4b7c067d12a72a939)
+        ;
+
+        
+    
+    
+            var marker_06f42ac95f9a61bf8d280d031d2c8195 = L.marker(
+                [37.17, -116.045],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_ac4e31634dfb2cc08d3bee7474aaac94 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_06f42ac95f9a61bf8d280d031d2c8195.setIcon(icon_ac4e31634dfb2cc08d3bee7474aaac94);
+        
+    
+        var popup_bafc990481ae93ceb92843e404d916f9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dfd282c272a26bb755cf9c7ab9802c7f = $(`<div id="html_dfd282c272a26bb755cf9c7ab9802c7f" style="width: 100.0%; height: 100.0%;"><b>Simon</b><br>Date: 04/25/1953<br>Yield: 27 kt</div>`)[0];
+            popup_bafc990481ae93ceb92843e404d916f9.setContent(html_dfd282c272a26bb755cf9c7ab9802c7f);
+        
+
+        marker_06f42ac95f9a61bf8d280d031d2c8195.bindPopup(popup_bafc990481ae93ceb92843e404d916f9)
+        ;
+
+        
+    
+    
+            var marker_ee8b32a16efc5dbd755b53a31ab27e7d = L.marker(
+                [37.168, -116.043],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_7a3da5694c3b75843fa0d2e2333f436b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ee8b32a16efc5dbd755b53a31ab27e7d.setIcon(icon_7a3da5694c3b75843fa0d2e2333f436b);
+        
+    
+        var popup_8c92396bef7fc6f5c80a4bf97088d455 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d603dadd8cad9b7fc97c242f6e27071e = $(`<div id="html_d603dadd8cad9b7fc97c242f6e27071e" style="width: 100.0%; height: 100.0%;"><b>Encore</b><br>Date: 05/08/1953<br>Yield: 32 kt</div>`)[0];
+            popup_8c92396bef7fc6f5c80a4bf97088d455.setContent(html_d603dadd8cad9b7fc97c242f6e27071e);
+        
+
+        marker_ee8b32a16efc5dbd755b53a31ab27e7d.bindPopup(popup_8c92396bef7fc6f5c80a4bf97088d455)
+        ;
+
+        
+    
+    
+            var marker_451bd7d3ca331d5f7a220838978096a5 = L.marker(
+                [37.17, -116.045],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_43bc1e355f7d5141042ff1ea1f6858aa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_451bd7d3ca331d5f7a220838978096a5.setIcon(icon_43bc1e355f7d5141042ff1ea1f6858aa);
+        
+    
+        var popup_5903ee4d0a8252bd9c2050b7eb9bdfb5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_634a6dc94f09b8ef291645d70afed12e = $(`<div id="html_634a6dc94f09b8ef291645d70afed12e" style="width: 100.0%; height: 100.0%;"><b>Harry</b><br>Date: 05/19/1953<br>Yield: 15 kt</div>`)[0];
+            popup_5903ee4d0a8252bd9c2050b7eb9bdfb5.setContent(html_634a6dc94f09b8ef291645d70afed12e);
+        
+
+        marker_451bd7d3ca331d5f7a220838978096a5.bindPopup(popup_5903ee4d0a8252bd9c2050b7eb9bdfb5)
+        ;
+
+        
+    
+    
+            var marker_7a0bc98229d16d41bf9f1da58c713f01 = L.marker(
+                [37.168, -116.043],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_7e74fae325643e37d82c7b46789d953b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_7a0bc98229d16d41bf9f1da58c713f01.setIcon(icon_7e74fae325643e37d82c7b46789d953b);
+        
+    
+        var popup_d99046331740f687b35a24df7bc9393b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b86942bd803ca764aa420b67b7a0bd1f = $(`<div id="html_b86942bd803ca764aa420b67b7a0bd1f" style="width: 100.0%; height: 100.0%;"><b>Grable</b><br>Date: 05/25/1953<br>Yield: 15 kt</div>`)[0];
+            popup_d99046331740f687b35a24df7bc9393b.setContent(html_b86942bd803ca764aa420b67b7a0bd1f);
+        
+
+        marker_7a0bc98229d16d41bf9f1da58c713f01.bindPopup(popup_d99046331740f687b35a24df7bc9393b)
+        ;
+
+        
+    
+    
+            var marker_ede0a46ce81aa2612d64b262f1d16936 = L.marker(
+                [37.17, -116.045],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_93b0c7c131a47ed5e9fcb496e9dbe6bf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ede0a46ce81aa2612d64b262f1d16936.setIcon(icon_93b0c7c131a47ed5e9fcb496e9dbe6bf);
+        
+    
+        var popup_e215243d2047d3d850617fcf0dd8c0c9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9e1138e94c3e7cf23d62b20b6d3ad6b9 = $(`<div id="html_9e1138e94c3e7cf23d62b20b6d3ad6b9" style="width: 100.0%; height: 100.0%;"><b>Climax</b><br>Date: 06/04/1953<br>Yield: 15 Mt</div>`)[0];
+            popup_e215243d2047d3d850617fcf0dd8c0c9.setContent(html_9e1138e94c3e7cf23d62b20b6d3ad6b9);
+        
+
+        marker_ede0a46ce81aa2612d64b262f1d16936.bindPopup(popup_e215243d2047d3d850617fcf0dd8c0c9)
+        ;
+
+        
+    
+    
+            var marker_90cc2ad6813e673611649adc4fa5074a = L.marker(
+                [11.567, 165.383],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_ec676940f14aa9f7511c6b55edaec379 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_90cc2ad6813e673611649adc4fa5074a.setIcon(icon_ec676940f14aa9f7511c6b55edaec379);
+        
+    
+        var popup_ceac52e51db10d19657e02087aaa3d96 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dcd3f31d2d33396b58b7414648adc3ed = $(`<div id="html_dcd3f31d2d33396b58b7414648adc3ed" style="width: 100.0%; height: 100.0%;"><b>Bravo</b><br>Date: 02/28/1954<br>Yield: 11 Mt</div>`)[0];
+            popup_ceac52e51db10d19657e02087aaa3d96.setContent(html_dcd3f31d2d33396b58b7414648adc3ed);
+        
+
+        marker_90cc2ad6813e673611649adc4fa5074a.bindPopup(popup_ceac52e51db10d19657e02087aaa3d96)
+        ;
+
+        
+    
+    
+            var marker_cfdb15deb316084dac57fa1df16b8376 = L.marker(
+                [11.567, 165.383],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_26dc3d544cd90567a214f691d6833675 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_cfdb15deb316084dac57fa1df16b8376.setIcon(icon_26dc3d544cd90567a214f691d6833675);
+        
+    
+        var popup_d47c8c8547587009cff2cb611b54fdaf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_17720deabb75e16d6b11cbc1b7392906 = $(`<div id="html_17720deabb75e16d6b11cbc1b7392906" style="width: 100.0%; height: 100.0%;"><b>Romeo</b><br>Date: 03/26/1954<br>Yield: 110 kt</div>`)[0];
+            popup_d47c8c8547587009cff2cb611b54fdaf.setContent(html_17720deabb75e16d6b11cbc1b7392906);
+        
+
+        marker_cfdb15deb316084dac57fa1df16b8376.bindPopup(popup_d47c8c8547587009cff2cb611b54fdaf)
+        ;
+
+        
+    
+    
+            var marker_a670261060894e5b07cba639b2a38ec0 = L.marker(
+                [11.567, 165.383],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_bed81dcf22afcd09d8d8a8e39077c49a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a670261060894e5b07cba639b2a38ec0.setIcon(icon_bed81dcf22afcd09d8d8a8e39077c49a);
+        
+    
+        var popup_b8d76107454ba8c1fcf35444345d72db = L.popup({"maxWidth": "100%"});
+
+        
+            var html_32e2b167480686f88332bdbd42d073a4 = $(`<div id="html_32e2b167480686f88332bdbd42d073a4" style="width: 100.0%; height: 100.0%;"><b>Koon</b><br>Date: 04/06/1954<br>Yield: 6.9 Mt</div>`)[0];
+            popup_b8d76107454ba8c1fcf35444345d72db.setContent(html_32e2b167480686f88332bdbd42d073a4);
+        
+
+        marker_a670261060894e5b07cba639b2a38ec0.bindPopup(popup_b8d76107454ba8c1fcf35444345d72db)
+        ;
+
+        
+    
+    
+            var marker_77534b5c6d9b7508d2204d3782b63821 = L.marker(
+                [11.567, 165.383],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_75dda3e8c94eaa7772dcd31c055347c2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_77534b5c6d9b7508d2204d3782b63821.setIcon(icon_75dda3e8c94eaa7772dcd31c055347c2);
+        
+    
+        var popup_7268594ae24758f92aa13b6aac779e87 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cd8237d82407fb82557b9fc9a7b3f731 = $(`<div id="html_cd8237d82407fb82557b9fc9a7b3f731" style="width: 100.0%; height: 100.0%;"><b>Union</b><br>Date: 04/25/1954<br>Yield: 13.5 Mt</div>`)[0];
+            popup_7268594ae24758f92aa13b6aac779e87.setContent(html_cd8237d82407fb82557b9fc9a7b3f731);
+        
+
+        marker_77534b5c6d9b7508d2204d3782b63821.bindPopup(popup_7268594ae24758f92aa13b6aac779e87)
+        ;
+
+        
+    
+    
+            var marker_8a77e55950f7b266cd38588c16ca476e = L.marker(
+                [11.567, 165.383],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_a77dee218d1f5cde911c52f318b8f915 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_8a77e55950f7b266cd38588c16ca476e.setIcon(icon_a77dee218d1f5cde911c52f318b8f915);
+        
+    
+        var popup_a1f99cbf6023151f9318296b4f7ad2fc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a2f42ea5c8f92a4f2de3369eb6562fe2 = $(`<div id="html_a2f42ea5c8f92a4f2de3369eb6562fe2" style="width: 100.0%; height: 100.0%;"><b>Yankee</b><br>Date: 05/04/1954<br>Yield: 1.69 Mt</div>`)[0];
+            popup_a1f99cbf6023151f9318296b4f7ad2fc.setContent(html_a2f42ea5c8f92a4f2de3369eb6562fe2);
+        
+
+        marker_8a77e55950f7b266cd38588c16ca476e.bindPopup(popup_a1f99cbf6023151f9318296b4f7ad2fc)
+        ;
+
+        
+    
+    
+            var marker_219600f2a636a7154274908c41d7ea06 = L.marker(
+                [11.667, 162.35],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_ccdbfe23a601050fd03e64c1b90f2db5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_219600f2a636a7154274908c41d7ea06.setIcon(icon_ccdbfe23a601050fd03e64c1b90f2db5);
+        
+    
+        var popup_cc6910d221e07dcdf5933bdcf60d6eba = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4fb074ccdcde7dbf78b1c7ebf78a3da3 = $(`<div id="html_4fb074ccdcde7dbf78b1c7ebf78a3da3" style="width: 100.0%; height: 100.0%;"><b>Nectar</b><br>Date: 05/13/1954<br>Yield: 1 kt</div>`)[0];
+            popup_cc6910d221e07dcdf5933bdcf60d6eba.setContent(html_4fb074ccdcde7dbf78b1c7ebf78a3da3);
+        
+
+        marker_219600f2a636a7154274908c41d7ea06.bindPopup(popup_cc6910d221e07dcdf5933bdcf60d6eba)
+        ;
+
+        
+    
+    
+            var marker_03c50597e1249febf1c4e600059a9f01 = L.marker(
+                [37.17, -116.045],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_24123deb4926530e47f48d2bae222798 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_03c50597e1249febf1c4e600059a9f01.setIcon(icon_24123deb4926530e47f48d2bae222798);
+        
+    
+        var popup_e86545abaccf530d471068a692687d2a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1de27afc848adc7648d0ba59ea026ee3 = $(`<div id="html_1de27afc848adc7648d0ba59ea026ee3" style="width: 100.0%; height: 100.0%;"><b>Wasp</b><br>Date: 02/18/1955<br>Yield: 2 kt</div>`)[0];
+            popup_e86545abaccf530d471068a692687d2a.setContent(html_1de27afc848adc7648d0ba59ea026ee3);
+        
+
+        marker_03c50597e1249febf1c4e600059a9f01.bindPopup(popup_e86545abaccf530d471068a692687d2a)
+        ;
+
+        
+    
+    
+            var marker_e1f35634431ec141678714b9d486f897 = L.marker(
+                [37.17, -116.045],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_d34d2781b00b8fa2723002c12ea20825 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e1f35634431ec141678714b9d486f897.setIcon(icon_d34d2781b00b8fa2723002c12ea20825);
+        
+    
+        var popup_33922ba991c6b3f289e6dcc27ea5ce28 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d9cdde77c2d7c3eff7cc65f24833e98e = $(`<div id="html_d9cdde77c2d7c3eff7cc65f24833e98e" style="width: 100.0%; height: 100.0%;"><b>Moth</b><br>Date: 02/22/1955<br>Yield: 7 kt</div>`)[0];
+            popup_33922ba991c6b3f289e6dcc27ea5ce28.setContent(html_d9cdde77c2d7c3eff7cc65f24833e98e);
+        
+
+        marker_e1f35634431ec141678714b9d486f897.bindPopup(popup_33922ba991c6b3f289e6dcc27ea5ce28)
+        ;
+
+        
+    
+    
+            var marker_a22a1fdd2a52a9385c3f517317a13e10 = L.marker(
+                [37.052, -116.034],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_0315eb5f8e33c8225273154e485433d8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a22a1fdd2a52a9385c3f517317a13e10.setIcon(icon_0315eb5f8e33c8225273154e485433d8);
+        
+    
+        var popup_a9597294c8228567dd3ec045c76d48eb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a54dcdfafdedc6111916f4714f9e2322 = $(`<div id="html_a54dcdfafdedc6111916f4714f9e2322" style="width: 100.0%; height: 100.0%;"><b>Tesla</b><br>Date: 03/01/1955<br>Yield: 22 kt</div>`)[0];
+            popup_a9597294c8228567dd3ec045c76d48eb.setContent(html_a54dcdfafdedc6111916f4714f9e2322);
+        
+
+        marker_a22a1fdd2a52a9385c3f517317a13e10.bindPopup(popup_a9597294c8228567dd3ec045c76d48eb)
+        ;
+
+        
+    
+    
+            var marker_8b1cc879f2b3ec8fed87afc850eba493 = L.marker(
+                [37.17, -116.045],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_ecd57cb1884d56ec2331a51106a437c9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_8b1cc879f2b3ec8fed87afc850eba493.setIcon(icon_ecd57cb1884d56ec2331a51106a437c9);
+        
+    
+        var popup_1525e026ff02015964a4cb1b19215061 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6906b6d00e5f76a4a740529b78c892fc = $(`<div id="html_6906b6d00e5f76a4a740529b78c892fc" style="width: 100.0%; height: 100.0%;"><b>Turk</b><br>Date: 03/07/1955<br>Yield: 43 kt</div>`)[0];
+            popup_1525e026ff02015964a4cb1b19215061.setContent(html_6906b6d00e5f76a4a740529b78c892fc);
+        
+
+        marker_8b1cc879f2b3ec8fed87afc850eba493.bindPopup(popup_1525e026ff02015964a4cb1b19215061)
+        ;
+
+        
+    
+    
+            var marker_a7f5ae05158ba184d0662807701da689 = L.marker(
+                [37.17, -116.045],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_207746deb407bd21363c93c431c89fa5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a7f5ae05158ba184d0662807701da689.setIcon(icon_207746deb407bd21363c93c431c89fa5);
+        
+    
+        var popup_5afbfeeea8007952306f4911162a1538 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2bb6b112c0ff71712d4985c59fcc520e = $(`<div id="html_2bb6b112c0ff71712d4985c59fcc520e" style="width: 100.0%; height: 100.0%;"><b>Hornet</b><br>Date: 03/12/1955<br>Yield: 8 kt</div>`)[0];
+            popup_5afbfeeea8007952306f4911162a1538.setContent(html_2bb6b112c0ff71712d4985c59fcc520e);
+        
+
+        marker_a7f5ae05158ba184d0662807701da689.bindPopup(popup_5afbfeeea8007952306f4911162a1538)
+        ;
+
+        
+    
+    
+            var marker_66e9241387b55802f08cd5112af01518 = L.marker(
+                [37.17, -116.045],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_935a163744b4455348dc40beec127e21 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_66e9241387b55802f08cd5112af01518.setIcon(icon_935a163744b4455348dc40beec127e21);
+        
+    
+        var popup_87fc778d5523200e00e01e37bfdbf098 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d052c9d47330fc546e8122a39f3e9a08 = $(`<div id="html_d052c9d47330fc546e8122a39f3e9a08" style="width: 100.0%; height: 100.0%;"><b>Bee</b><br>Date: 03/22/1955<br>Yield: 1 kt</div>`)[0];
+            popup_87fc778d5523200e00e01e37bfdbf098.setContent(html_d052c9d47330fc546e8122a39f3e9a08);
+        
+
+        marker_66e9241387b55802f08cd5112af01518.bindPopup(popup_87fc778d5523200e00e01e37bfdbf098)
+        ;
+
+        
+    
+    
+            var marker_96f5ab280e9b5e63434776a3c41ba0e8 = L.marker(
+                [37.194, -116.034],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_eee17d4aa099e1005ef1a5a6466c85fa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_96f5ab280e9b5e63434776a3c41ba0e8.setIcon(icon_eee17d4aa099e1005ef1a5a6466c85fa);
+        
+    
+        var popup_d547126e610bb0f5f36c7c99bb41c5e5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eae1aa3c4de6495368d2848e45731a2d = $(`<div id="html_eae1aa3c4de6495368d2848e45731a2d" style="width: 100.0%; height: 100.0%;"><b>Ess</b><br>Date: 03/23/1955<br>Yield: 14 kt</div>`)[0];
+            popup_d547126e610bb0f5f36c7c99bb41c5e5.setContent(html_eae1aa3c4de6495368d2848e45731a2d);
+        
+
+        marker_96f5ab280e9b5e63434776a3c41ba0e8.bindPopup(popup_d547126e610bb0f5f36c7c99bb41c5e5)
+        ;
+
+        
+    
+    
+            var marker_6d599d6fb0c029494fe263d12cfd6f0e = L.marker(
+                [37.17, -116.045],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_d72f96d307bac7255e58cdf76b0ee487 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_6d599d6fb0c029494fe263d12cfd6f0e.setIcon(icon_d72f96d307bac7255e58cdf76b0ee487);
+        
+    
+        var popup_f183266ee15efd8a47eea82b5de50a45 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e980291162c119830f796694d018ab05 = $(`<div id="html_e980291162c119830f796694d018ab05" style="width: 100.0%; height: 100.0%;"><b>Apple-1</b><br>Date: 03/29/1955<br>Yield: 3 kt</div>`)[0];
+            popup_f183266ee15efd8a47eea82b5de50a45.setContent(html_e980291162c119830f796694d018ab05);
+        
+
+        marker_6d599d6fb0c029494fe263d12cfd6f0e.bindPopup(popup_f183266ee15efd8a47eea82b5de50a45)
+        ;
+
+        
+    
+    
+            var marker_8a080556f6a63821e79f7646152a56b5 = L.marker(
+                [37.17, -116.045],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_161be2fc0c5de57f47aa5ba5e4ac6372 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_8a080556f6a63821e79f7646152a56b5.setIcon(icon_161be2fc0c5de57f47aa5ba5e4ac6372);
+        
+    
+        var popup_d54af852b78e13e62d493c8e9554cfc4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d2d785c18f93e28f8d1e346d1f5f63b1 = $(`<div id="html_d2d785c18f93e28f8d1e346d1f5f63b1" style="width: 100.0%; height: 100.0%;"><b>Wasp Prime</b><br>Date: 03/29/1955<br>Yield: 3 kt</div>`)[0];
+            popup_d54af852b78e13e62d493c8e9554cfc4.setContent(html_d2d785c18f93e28f8d1e346d1f5f63b1);
+        
+
+        marker_8a080556f6a63821e79f7646152a56b5.bindPopup(popup_d54af852b78e13e62d493c8e9554cfc4)
+        ;
+
+        
+    
+    
+            var marker_cd5a5c6dc9fdad991907eeac24d2b54a = L.marker(
+                [37.17, -116.045],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_b32565ea07fc2577496d47dcc1b1fb14 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_cd5a5c6dc9fdad991907eeac24d2b54a.setIcon(icon_b32565ea07fc2577496d47dcc1b1fb14);
+        
+    
+        var popup_6d7a4d58fe4eb51ad5d7ae36825fe91c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8d0fa29582af62e815092c92338ef6ef = $(`<div id="html_8d0fa29582af62e815092c92338ef6ef" style="width: 100.0%; height: 100.0%;"><b>HA</b><br>Date: 04/06/1955<br>Yield: 2 kt</div>`)[0];
+            popup_6d7a4d58fe4eb51ad5d7ae36825fe91c.setContent(html_8d0fa29582af62e815092c92338ef6ef);
+        
+
+        marker_cd5a5c6dc9fdad991907eeac24d2b54a.bindPopup(popup_6d7a4d58fe4eb51ad5d7ae36825fe91c)
+        ;
+
+        
+    
+    
+            var marker_74d8bae20bc23c2199ce0c3e1e3acb86 = L.marker(
+                [37.052, -116.034],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_18d883bfc4d57e58bb058342b717e82d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_74d8bae20bc23c2199ce0c3e1e3acb86.setIcon(icon_18d883bfc4d57e58bb058342b717e82d);
+        
+    
+        var popup_914fc2a10d7205a7b00c4aa69b1df1ad = L.popup({"maxWidth": "100%"});
+
+        
+            var html_35bc49e1c40a39bdf9ef39fbc5892493 = $(`<div id="html_35bc49e1c40a39bdf9ef39fbc5892493" style="width: 100.0%; height: 100.0%;"><b>Post</b><br>Date: 04/09/1955<br>Yield: 22 kt</div>`)[0];
+            popup_914fc2a10d7205a7b00c4aa69b1df1ad.setContent(html_35bc49e1c40a39bdf9ef39fbc5892493);
+        
+
+        marker_74d8bae20bc23c2199ce0c3e1e3acb86.bindPopup(popup_914fc2a10d7205a7b00c4aa69b1df1ad)
+        ;
+
+        
+    
+    
+            var marker_fef4388ede9fe773707a52dce0ce59e0 = L.marker(
+                [37.168, -116.043],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_5ae99f4d3a9a9a69c96e9673fb463bdb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_fef4388ede9fe773707a52dce0ce59e0.setIcon(icon_5ae99f4d3a9a9a69c96e9673fb463bdb);
+        
+    
+        var popup_26f442b01930308d0a44110729b18b93 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2da3c8da0bc79d1e4f4b1dfcf1e50071 = $(`<div id="html_2da3c8da0bc79d1e4f4b1dfcf1e50071" style="width: 100.0%; height: 100.0%;"><b>MET</b><br>Date: 04/15/1955<br>Yield: 29 kt</div>`)[0];
+            popup_26f442b01930308d0a44110729b18b93.setContent(html_2da3c8da0bc79d1e4f4b1dfcf1e50071);
+        
+
+        marker_fef4388ede9fe773707a52dce0ce59e0.bindPopup(popup_26f442b01930308d0a44110729b18b93)
+        ;
+
+        
+    
+    
+            var marker_c27fc7f9439bbd91e143acdbf42fdd9e = L.marker(
+                [37.17, -116.045],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_04cf7ae5f425630d0cdd7eb8851b2ef3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c27fc7f9439bbd91e143acdbf42fdd9e.setIcon(icon_04cf7ae5f425630d0cdd7eb8851b2ef3);
+        
+    
+        var popup_8c80adcc0076c5368c606697bbc961c8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_29007d189cf75862a12a48b6bd6757b6 = $(`<div id="html_29007d189cf75862a12a48b6bd6757b6" style="width: 100.0%; height: 100.0%;"><b>Apple-2</b><br>Date: 05/05/1955<br>Yield: 28 kt</div>`)[0];
+            popup_8c80adcc0076c5368c606697bbc961c8.setContent(html_29007d189cf75862a12a48b6bd6757b6);
+        
+
+        marker_c27fc7f9439bbd91e143acdbf42fdd9e.bindPopup(popup_8c80adcc0076c5368c606697bbc961c8)
+        ;
+
+        
+    
+    
+            var marker_ce39283363a8ff769318cb1645b8f263 = L.marker(
+                [37.17, -116.045],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_11fabc3bb456c708c528e417ba8f5e1f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ce39283363a8ff769318cb1645b8f263.setIcon(icon_11fabc3bb456c708c528e417ba8f5e1f);
+        
+    
+        var popup_e32261127495e6bda65f94d33de8814b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_88ab4c247bb62a84dc3354874470af81 = $(`<div id="html_88ab4c247bb62a84dc3354874470af81" style="width: 100.0%; height: 100.0%;"><b>Zucchini</b><br>Date: 05/15/1955<br>Yield: 1 kt</div>`)[0];
+            popup_e32261127495e6bda65f94d33de8814b.setContent(html_88ab4c247bb62a84dc3354874470af81);
+        
+
+        marker_ce39283363a8ff769318cb1645b8f263.bindPopup(popup_e32261127495e6bda65f94d33de8814b)
+        ;
+
+        
+    
+    
+            var marker_8e358f0ca223431e179f7b824acec659 = L.marker(
+                [29.0, -126.0],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_5ef517be3c33d38a1f6ebfee6086bfdc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_8e358f0ca223431e179f7b824acec659.setIcon(icon_5ef517be3c33d38a1f6ebfee6086bfdc);
+        
+    
+        var popup_109704f2c8b4b32ca4e3c165d3358efa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9b0bc7e03bc4a0c37d881f291e07d5fd = $(`<div id="html_9b0bc7e03bc4a0c37d881f291e07d5fd" style="width: 100.0%; height: 100.0%;"><b>Wigwam</b><br>Date: 05/14/1955<br>Yield: 30 kt</div>`)[0];
+            popup_109704f2c8b4b32ca4e3c165d3358efa.setContent(html_9b0bc7e03bc4a0c37d881f291e07d5fd);
+        
+
+        marker_8e358f0ca223431e179f7b824acec659.bindPopup(popup_109704f2c8b4b32ca4e3c165d3358efa)
+        ;
+
+        
+    
+    
+            var marker_f77b023d6ce48762585c6f63fa9f65fe = L.marker(
+                [37.11, -116.0],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_c927ae6ad3a55481adbc3f62effb4d64 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f77b023d6ce48762585c6f63fa9f65fe.setIcon(icon_c927ae6ad3a55481adbc3f62effb4d64);
+        
+    
+        var popup_ac8b7cf4394391db170f3c6f6c7e7d3a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ffd2168c676bf7675846c9c2c5672199 = $(`<div id="html_ffd2168c676bf7675846c9c2c5672199" style="width: 100.0%; height: 100.0%;"><b>Project 56 No. 1</b><br>Date: 11/01/1955<br>Yield: 0 kt</div>`)[0];
+            popup_ac8b7cf4394391db170f3c6f6c7e7d3a.setContent(html_ffd2168c676bf7675846c9c2c5672199);
+        
+
+        marker_f77b023d6ce48762585c6f63fa9f65fe.bindPopup(popup_ac8b7cf4394391db170f3c6f6c7e7d3a)
+        ;
+
+        
+    
+    
+            var marker_904ef2f98eeec51b491f8c0b2321a4bd = L.marker(
+                [37.11, -116.0],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_e134e35646414cc4a864c74eb8dbb09a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_904ef2f98eeec51b491f8c0b2321a4bd.setIcon(icon_e134e35646414cc4a864c74eb8dbb09a);
+        
+    
+        var popup_e27be9e17f7eaff8a4dc984567536bd0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8e0128c1490b713b82d3377c133c46af = $(`<div id="html_8e0128c1490b713b82d3377c133c46af" style="width: 100.0%; height: 100.0%;"><b>Project 56 No. 2</b><br>Date: 11/03/1955<br>Yield: 0 kt</div>`)[0];
+            popup_e27be9e17f7eaff8a4dc984567536bd0.setContent(html_8e0128c1490b713b82d3377c133c46af);
+        
+
+        marker_904ef2f98eeec51b491f8c0b2321a4bd.bindPopup(popup_e27be9e17f7eaff8a4dc984567536bd0)
+        ;
+
+        
+    
+    
+            var marker_14ba6f001504260bb4e0e9c55b8b8004 = L.marker(
+                [37.11, -116.0],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_0f28d66ced2916a3c7ca338b46b002ae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_14ba6f001504260bb4e0e9c55b8b8004.setIcon(icon_0f28d66ced2916a3c7ca338b46b002ae);
+        
+    
+        var popup_63e08dde113c50027730f1b46c257166 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_83252943de56d0d3c795d878b945327d = $(`<div id="html_83252943de56d0d3c795d878b945327d" style="width: 100.0%; height: 100.0%;"><b>Project 56 No. 3</b><br>Date: 11/05/1955<br>Yield: 0 kt</div>`)[0];
+            popup_63e08dde113c50027730f1b46c257166.setContent(html_83252943de56d0d3c795d878b945327d);
+        
+
+        marker_14ba6f001504260bb4e0e9c55b8b8004.bindPopup(popup_63e08dde113c50027730f1b46c257166)
+        ;
+
+        
+    
+    
+            var marker_2095058069e2a2b0173943b7e1126322 = L.marker(
+                [37.11, -116.0],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_08a65a29f080ce9f72e5782dc6a2f323 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_2095058069e2a2b0173943b7e1126322.setIcon(icon_08a65a29f080ce9f72e5782dc6a2f323);
+        
+    
+        var popup_fb4c859374617aef158ce41e2a9c0a2f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_08e75c504ea5a10a9704f0ab8621c63b = $(`<div id="html_08e75c504ea5a10a9704f0ab8621c63b" style="width: 100.0%; height: 100.0%;"><b>Project 56 No. 4</b><br>Date: 01/18/1956<br>Yield: 0 kt</div>`)[0];
+            popup_fb4c859374617aef158ce41e2a9c0a2f.setContent(html_08e75c504ea5a10a9704f0ab8621c63b);
+        
+
+        marker_2095058069e2a2b0173943b7e1126322.bindPopup(popup_fb4c859374617aef158ce41e2a9c0a2f)
+        ;
+
+        
+    
+    
+            var marker_7e1318c305401f43aa1d3b5494712a34 = L.marker(
+                [11.667, 162.35],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_c5d289d99fee412d7d6248003dff16e9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_7e1318c305401f43aa1d3b5494712a34.setIcon(icon_c5d289d99fee412d7d6248003dff16e9);
+        
+    
+        var popup_4d977f1ea88199a921713bd24aec8418 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_506dfaf77287b71b5b066db68e71e9dc = $(`<div id="html_506dfaf77287b71b5b066db68e71e9dc" style="width: 100.0%; height: 100.0%;"><b>Lacrosse</b><br>Date: 05/04/1956<br>Yield: 40 kt</div>`)[0];
+            popup_4d977f1ea88199a921713bd24aec8418.setContent(html_506dfaf77287b71b5b066db68e71e9dc);
+        
+
+        marker_7e1318c305401f43aa1d3b5494712a34.bindPopup(popup_4d977f1ea88199a921713bd24aec8418)
+        ;
+
+        
+    
+    
+            var marker_7efdfc95a658584d4de37232521b8e71 = L.marker(
+                [11.567, 165.383],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_36ce76e72dd939cc0b012b0512ffeb13 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_7efdfc95a658584d4de37232521b8e71.setIcon(icon_36ce76e72dd939cc0b012b0512ffeb13);
+        
+    
+        var popup_cdc75a23c79122766e7941e411ec7490 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1c94b7c96fb6809e1ad7e8364683d3d9 = $(`<div id="html_1c94b7c96fb6809e1ad7e8364683d3d9" style="width: 100.0%; height: 100.0%;"><b>Cherokee</b><br>Date: 05/20/1956<br>Yield: 3.8 Mt</div>`)[0];
+            popup_cdc75a23c79122766e7941e411ec7490.setContent(html_1c94b7c96fb6809e1ad7e8364683d3d9);
+        
+
+        marker_7efdfc95a658584d4de37232521b8e71.bindPopup(popup_cdc75a23c79122766e7941e411ec7490)
+        ;
+
+        
+    
+    
+            var marker_929a0a1e0e2edd036bef9689593b1d4f = L.marker(
+                [11.567, 165.383],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_2d2245a26c5b2881a329ef0f7b2c4baa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_929a0a1e0e2edd036bef9689593b1d4f.setIcon(icon_2d2245a26c5b2881a329ef0f7b2c4baa);
+        
+    
+        var popup_597c06e6b7c59f67c8ac68257bd5e01d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_869258d8211e8c100aa3ffe527d7b0c0 = $(`<div id="html_869258d8211e8c100aa3ffe527d7b0c0" style="width: 100.0%; height: 100.0%;"><b>Zuni</b><br>Date: 05/27/1956<br>Yield: 190 tons</div>`)[0];
+            popup_597c06e6b7c59f67c8ac68257bd5e01d.setContent(html_869258d8211e8c100aa3ffe527d7b0c0);
+        
+
+        marker_929a0a1e0e2edd036bef9689593b1d4f.bindPopup(popup_597c06e6b7c59f67c8ac68257bd5e01d)
+        ;
+
+        
+    
+    
+            var marker_9e6789d5b12b02e1e8e9529f87c3e974 = L.marker(
+                [11.667, 162.35],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_6d3a23576174cc89d1491581275d2f9a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_9e6789d5b12b02e1e8e9529f87c3e974.setIcon(icon_6d3a23576174cc89d1491581275d2f9a);
+        
+    
+        var popup_a506d4b8349cf4857f6df43bff5730e3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b0cb958a2660d445ffdb619199ae8a29 = $(`<div id="html_b0cb958a2660d445ffdb619199ae8a29" style="width: 100.0%; height: 100.0%;"><b>Yuma</b><br>Date: 05/27/1956<br>Yield: 14.9 kt</div>`)[0];
+            popup_a506d4b8349cf4857f6df43bff5730e3.setContent(html_b0cb958a2660d445ffdb619199ae8a29);
+        
+
+        marker_9e6789d5b12b02e1e8e9529f87c3e974.bindPopup(popup_a506d4b8349cf4857f6df43bff5730e3)
+        ;
+
+        
+    
+    
+            var marker_26ffef0037a510b9962c8cfb106a5ba8 = L.marker(
+                [11.667, 162.35],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_61507d80f58bae6fb15e7a6eee834d98 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_26ffef0037a510b9962c8cfb106a5ba8.setIcon(icon_61507d80f58bae6fb15e7a6eee834d98);
+        
+    
+        var popup_39b02f8307fc96c50d7dd4fd3322193d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_82aeed74532a8ee118963116fd26f394 = $(`<div id="html_82aeed74532a8ee118963116fd26f394" style="width: 100.0%; height: 100.0%;"><b>Erie</b><br>Date: 05/30/1956<br>Yield: 13.7 kt</div>`)[0];
+            popup_39b02f8307fc96c50d7dd4fd3322193d.setContent(html_82aeed74532a8ee118963116fd26f394);
+        
+
+        marker_26ffef0037a510b9962c8cfb106a5ba8.bindPopup(popup_39b02f8307fc96c50d7dd4fd3322193d)
+        ;
+
+        
+    
+    
+            var marker_cc465dc39abf738943517f000fcb6f71 = L.marker(
+                [11.667, 162.35],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_ae53b0f30fdaed8f42b11eae26f97d9c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_cc465dc39abf738943517f000fcb6f71.setIcon(icon_ae53b0f30fdaed8f42b11eae26f97d9c);
+        
+    
+        var popup_cd3bec38133aee620ab9a364497e0b42 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4860bf9d98a069c2cac75c9e45a6818b = $(`<div id="html_4860bf9d98a069c2cac75c9e45a6818b" style="width: 100.0%; height: 100.0%;"><b>Seminole</b><br>Date: 06/06/1956<br>Yield: 365 kt</div>`)[0];
+            popup_cd3bec38133aee620ab9a364497e0b42.setContent(html_4860bf9d98a069c2cac75c9e45a6818b);
+        
+
+        marker_cc465dc39abf738943517f000fcb6f71.bindPopup(popup_cd3bec38133aee620ab9a364497e0b42)
+        ;
+
+        
+    
+    
+            var marker_6e726df35ec9338eeed5d229281bb6ac = L.marker(
+                [11.567, 165.383],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_665a599c777cd6d3ee4eed61f55c19f1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_6e726df35ec9338eeed5d229281bb6ac.setIcon(icon_665a599c777cd6d3ee4eed61f55c19f1);
+        
+    
+        var popup_ae0839e83f334788a56adea5f8aa6b2d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a8b7c0b8811d97e892fecfeb1233072e = $(`<div id="html_a8b7c0b8811d97e892fecfeb1233072e" style="width: 100.0%; height: 100.0%;"><b>Flathead</b><br>Date: 06/11/1956<br>Yield: 8 kt</div>`)[0];
+            popup_ae0839e83f334788a56adea5f8aa6b2d.setContent(html_a8b7c0b8811d97e892fecfeb1233072e);
+        
+
+        marker_6e726df35ec9338eeed5d229281bb6ac.bindPopup(popup_ae0839e83f334788a56adea5f8aa6b2d)
+        ;
+
+        
+    
+    
+            var marker_6bae04d4a7e978ffc189fa6103fd08c2 = L.marker(
+                [11.667, 162.35],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_bbe79f7c04642efdfc7e06d06a962861 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_6bae04d4a7e978ffc189fa6103fd08c2.setIcon(icon_bbe79f7c04642efdfc7e06d06a962861);
+        
+    
+        var popup_bc6b26bfc9d584c9f0a89bd690131229 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dd5c86c5b30d51c52780aae6c2fefe00 = $(`<div id="html_dd5c86c5b30d51c52780aae6c2fefe00" style="width: 100.0%; height: 100.0%;"><b>Blackfoot</b><br>Date: 06/11/1956<br>Yield: 1.49 kt</div>`)[0];
+            popup_bc6b26bfc9d584c9f0a89bd690131229.setContent(html_dd5c86c5b30d51c52780aae6c2fefe00);
+        
+
+        marker_6bae04d4a7e978ffc189fa6103fd08c2.bindPopup(popup_bc6b26bfc9d584c9f0a89bd690131229)
+        ;
+
+        
+    
+    
+            var marker_538f9edba9023757a8f120e68aa429f2 = L.marker(
+                [11.667, 162.35],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_f56ff55f5d21b2d31c41cc06d79f1411 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_538f9edba9023757a8f120e68aa429f2.setIcon(icon_f56ff55f5d21b2d31c41cc06d79f1411);
+        
+    
+        var popup_047e4c3571b4258ed6011f08a63a46e5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5484c6085177d579e5259c9dedb60861 = $(`<div id="html_5484c6085177d579e5259c9dedb60861" style="width: 100.0%; height: 100.0%;"><b>Kickapoo</b><br>Date: 06/13/1956<br>Yield: 1.7 kt</div>`)[0];
+            popup_047e4c3571b4258ed6011f08a63a46e5.setContent(html_5484c6085177d579e5259c9dedb60861);
+        
+
+        marker_538f9edba9023757a8f120e68aa429f2.bindPopup(popup_047e4c3571b4258ed6011f08a63a46e5)
+        ;
+
+        
+    
+    
+            var marker_692572b7644a2cde296bc0dbe9f99ebf = L.marker(
+                [11.667, 162.35],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_934cb64f41382fda57ed6238c94975c2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_692572b7644a2cde296bc0dbe9f99ebf.setIcon(icon_934cb64f41382fda57ed6238c94975c2);
+        
+    
+        var popup_85dd27153f3be715d3c6475166843b46 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4268f1d369eeba68dd53ff191db5c8a0 = $(`<div id="html_4268f1d369eeba68dd53ff191db5c8a0" style="width: 100.0%; height: 100.0%;"><b>Osage</b><br>Date: 06/16/1956<br>Yield: 15.2 kt</div>`)[0];
+            popup_85dd27153f3be715d3c6475166843b46.setContent(html_4268f1d369eeba68dd53ff191db5c8a0);
+        
+
+        marker_692572b7644a2cde296bc0dbe9f99ebf.bindPopup(popup_85dd27153f3be715d3c6475166843b46)
+        ;
+
+        
+    
+    
+            var marker_abec93b8ca2cd28cd5adef5e32a09528 = L.marker(
+                [11.667, 162.35],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_5d0297acc7c06f3a95aa272b20e47cfc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_abec93b8ca2cd28cd5adef5e32a09528.setIcon(icon_5d0297acc7c06f3a95aa272b20e47cfc);
+        
+    
+        var popup_2d89aba1e9711da3d14c89ae13a13903 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5e6636b31ad232393ecb1f6abebad6d6 = $(`<div id="html_5e6636b31ad232393ecb1f6abebad6d6" style="width: 100.0%; height: 100.0%;"><b>Inca</b><br>Date: 06/21/1956<br>Yield: 1.1 Mt</div>`)[0];
+            popup_2d89aba1e9711da3d14c89ae13a13903.setContent(html_5e6636b31ad232393ecb1f6abebad6d6);
+        
+
+        marker_abec93b8ca2cd28cd5adef5e32a09528.bindPopup(popup_2d89aba1e9711da3d14c89ae13a13903)
+        ;
+
+        
+    
+    
+            var marker_d49221a12d9c717feb98cf8f8e23ae2c = L.marker(
+                [11.567, 165.383],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_e4d282707871a1f3983dbfbb8fed9601 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d49221a12d9c717feb98cf8f8e23ae2c.setIcon(icon_e4d282707871a1f3983dbfbb8fed9601);
+        
+    
+        var popup_7abac6780d395b2a71b4cd6cfcad9290 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b93772cc85e4c384b4f7b7f8141f3bc3 = $(`<div id="html_b93772cc85e4c384b4f7b7f8141f3bc3" style="width: 100.0%; height: 100.0%;"><b>Dakota</b><br>Date: 06/25/1956<br>Yield: 1.49 kt</div>`)[0];
+            popup_7abac6780d395b2a71b4cd6cfcad9290.setContent(html_b93772cc85e4c384b4f7b7f8141f3bc3);
+        
+
+        marker_d49221a12d9c717feb98cf8f8e23ae2c.bindPopup(popup_7abac6780d395b2a71b4cd6cfcad9290)
+        ;
+
+        
+    
+    
+            var marker_8a2e34fb89e93a843c365ba063c9ddca = L.marker(
+                [11.667, 162.35],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_4da8da62cd2e72e2a4e956021bf4c021 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_8a2e34fb89e93a843c365ba063c9ddca.setIcon(icon_4da8da62cd2e72e2a4e956021bf4c021);
+        
+    
+        var popup_0995fa746949bead0d24994b8f89c7e7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_26d262c5a6db7e7f9bb7188d7455aab0 = $(`<div id="html_26d262c5a6db7e7f9bb7188d7455aab0" style="width: 100.0%; height: 100.0%;"><b>Mohawk</b><br>Date: 07/02/1956<br>Yield: 360 kt</div>`)[0];
+            popup_0995fa746949bead0d24994b8f89c7e7.setContent(html_26d262c5a6db7e7f9bb7188d7455aab0);
+        
+
+        marker_8a2e34fb89e93a843c365ba063c9ddca.bindPopup(popup_0995fa746949bead0d24994b8f89c7e7)
+        ;
+
+        
+    
+    
+            var marker_f6aa6614a280240695d90d5175adafc8 = L.marker(
+                [11.667, 162.35],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_4e3fa59f2188810c5274004c788a197b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f6aa6614a280240695d90d5175adafc8.setIcon(icon_4e3fa59f2188810c5274004c788a197b);
+        
+    
+        var popup_26b48ab0b3d8be7453719a4c444f75c4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1e6e55ae6a4f414dd52e87c997ba19c7 = $(`<div id="html_1e6e55ae6a4f414dd52e87c997ba19c7" style="width: 100.0%; height: 100.0%;"><b>Apache</b><br>Date: 07/08/1956<br>Yield: 4.5 Mt</div>`)[0];
+            popup_26b48ab0b3d8be7453719a4c444f75c4.setContent(html_1e6e55ae6a4f414dd52e87c997ba19c7);
+        
+
+        marker_f6aa6614a280240695d90d5175adafc8.bindPopup(popup_26b48ab0b3d8be7453719a4c444f75c4)
+        ;
+
+        
+    
+    
+            var marker_580589b7020fe44e97fb723aa9df0561 = L.marker(
+                [11.567, 165.383],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_54c1399eb0c7b932526fa3e9ac92a46f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_580589b7020fe44e97fb723aa9df0561.setIcon(icon_54c1399eb0c7b932526fa3e9ac92a46f);
+        
+    
+        var popup_ce8927b2ff09db149129d29fe3d116ff = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4ee9accef9e80135623b6456ffa4455f = $(`<div id="html_4ee9accef9e80135623b6456ffa4455f" style="width: 100.0%; height: 100.0%;"><b>Navajo</b><br>Date: 07/10/1956<br>Yield: 5 Mt</div>`)[0];
+            popup_ce8927b2ff09db149129d29fe3d116ff.setContent(html_4ee9accef9e80135623b6456ffa4455f);
+        
+
+        marker_580589b7020fe44e97fb723aa9df0561.bindPopup(popup_ce8927b2ff09db149129d29fe3d116ff)
+        ;
+
+        
+    
+    
+            var marker_d9e79076357429147a5311a08d3707cd = L.marker(
+                [11.567, 165.383],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_8c2e87921a51f10c1e265fe0ce94a7b4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d9e79076357429147a5311a08d3707cd.setIcon(icon_8c2e87921a51f10c1e265fe0ce94a7b4);
+        
+    
+        var popup_8bfb3ffb25db08ca75a76d16560ce2e9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bd34b66a997d74472b9ef61dbafa560e = $(`<div id="html_bd34b66a997d74472b9ef61dbafa560e" style="width: 100.0%; height: 100.0%;"><b>Tewa</b><br>Date: 07/20/1956<br>Yield: 250 kt</div>`)[0];
+            popup_8bfb3ffb25db08ca75a76d16560ce2e9.setContent(html_bd34b66a997d74472b9ef61dbafa560e);
+        
+
+        marker_d9e79076357429147a5311a08d3707cd.bindPopup(popup_8bfb3ffb25db08ca75a76d16560ce2e9)
+        ;
+
+        
+    
+    
+            var marker_01690ba6950104f18e495054f0fd6d8e = L.marker(
+                [11.667, 162.35],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_b9e85f59d2a30dd8591335cbe9150587 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_01690ba6950104f18e495054f0fd6d8e.setIcon(icon_b9e85f59d2a30dd8591335cbe9150587);
+        
+    
+        var popup_41ffa0edb8f5df3f089a186607afcc90 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f4f674f6e0291dd25d92ba216acc749c = $(`<div id="html_f4f674f6e0291dd25d92ba216acc749c" style="width: 100.0%; height: 100.0%;"><b>Huron</b><br>Date: 07/21/1956<br>Yield: 1.85 Mt</div>`)[0];
+            popup_41ffa0edb8f5df3f089a186607afcc90.setContent(html_f4f674f6e0291dd25d92ba216acc749c);
+        
+
+        marker_01690ba6950104f18e495054f0fd6d8e.bindPopup(popup_41ffa0edb8f5df3f089a186607afcc90)
+        ;
+
+        
+    
+    
+            var marker_1fc33bf2c891b358adde2322d33d22b0 = L.marker(
+                [36.0, -115.0],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_6dbfc6df252ecbdffd6db602d676f7bc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_1fc33bf2c891b358adde2322d33d22b0.setIcon(icon_6dbfc6df252ecbdffd6db602d676f7bc);
+        
+    
+        var popup_49bc0d4d7f800a7eae401614b9669746 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_59c5da65e112478ec164ce2bda8ba531 = $(`<div id="html_59c5da65e112478ec164ce2bda8ba531" style="width: 100.0%; height: 100.0%;"><b>Project 57 No. 1</b><br>Date: 04/24/1957<br>Yield: 0 kt</div>`)[0];
+            popup_49bc0d4d7f800a7eae401614b9669746.setContent(html_59c5da65e112478ec164ce2bda8ba531);
+        
+
+        marker_1fc33bf2c891b358adde2322d33d22b0.bindPopup(popup_49bc0d4d7f800a7eae401614b9669746)
+        ;
+
+        
+    
+    
+            var marker_18e0aae73c39e486c304342779697d82 = L.marker(
+                [37.17, -116.045],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_8ce1bf31034eff69c36d68db95a572bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_18e0aae73c39e486c304342779697d82.setIcon(icon_8ce1bf31034eff69c36d68db95a572bb);
+        
+    
+        var popup_8877541fb18fe71c8adea6b461c00a8b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9f63af306b0e07f63f577ea7b2eacfb8 = $(`<div id="html_9f63af306b0e07f63f577ea7b2eacfb8" style="width: 100.0%; height: 100.0%;"><b>Boltzmann</b><br>Date: 05/28/1957<br>Yield: 12 kt</div>`)[0];
+            popup_8877541fb18fe71c8adea6b461c00a8b.setContent(html_9f63af306b0e07f63f577ea7b2eacfb8);
+        
+
+        marker_18e0aae73c39e486c304342779697d82.bindPopup(popup_8877541fb18fe71c8adea6b461c00a8b)
+        ;
+
+        
+    
+    
+            var marker_844acaf801a8f46d35d25af9fcdb1157 = L.marker(
+                [37.17, -116.045],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_7c67098f8135045b12c896cb8612e2db = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_844acaf801a8f46d35d25af9fcdb1157.setIcon(icon_7c67098f8135045b12c896cb8612e2db);
+        
+    
+        var popup_53a4a436e9136f8466ff5f1f5aa6a2fd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0ca64fdf2d4fdf1738583f22c1837114 = $(`<div id="html_0ca64fdf2d4fdf1738583f22c1837114" style="width: 100.0%; height: 100.0%;"><b>Franklin</b><br>Date: 06/02/1957<br>Yield: 0.5 tons</div>`)[0];
+            popup_53a4a436e9136f8466ff5f1f5aa6a2fd.setContent(html_0ca64fdf2d4fdf1738583f22c1837114);
+        
+
+        marker_844acaf801a8f46d35d25af9fcdb1157.bindPopup(popup_53a4a436e9136f8466ff5f1f5aa6a2fd)
+        ;
+
+        
+    
+    
+            var marker_5bbf7ac552ef59962d45527bf1285ee7 = L.marker(
+                [37.052, -116.034],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_4bd004e847f9528a0cbe5a5fc9622913 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_5bbf7ac552ef59962d45527bf1285ee7.setIcon(icon_4bd004e847f9528a0cbe5a5fc9622913);
+        
+    
+        var popup_98b490bd4511d7e1e8be6d74e351fa77 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_87f39461492020dca5ca1f20572bb13c = $(`<div id="html_87f39461492020dca5ca1f20572bb13c" style="width: 100.0%; height: 100.0%;"><b>Lassen</b><br>Date: 06/05/1957<br>Yield: 10 kt</div>`)[0];
+            popup_98b490bd4511d7e1e8be6d74e351fa77.setContent(html_87f39461492020dca5ca1f20572bb13c);
+        
+
+        marker_5bbf7ac552ef59962d45527bf1285ee7.bindPopup(popup_98b490bd4511d7e1e8be6d74e351fa77)
+        ;
+
+        
+    
+    
+            var marker_53b3461c7ad031e573419b653a644117 = L.marker(
+                [37.052, -116.034],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_1b74967b0e29babb032f2ce4d7602472 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_53b3461c7ad031e573419b653a644117.setIcon(icon_1b74967b0e29babb032f2ce4d7602472);
+        
+    
+        var popup_3fa38f67bc46b7492449e0b2b7f04a5c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_efc5cc63bdbfa4180f2529e6328d0c7d = $(`<div id="html_efc5cc63bdbfa4180f2529e6328d0c7d" style="width: 100.0%; height: 100.0%;"><b>Wilson</b><br>Date: 06/18/1957<br>Yield: 37 kt</div>`)[0];
+            popup_3fa38f67bc46b7492449e0b2b7f04a5c.setContent(html_efc5cc63bdbfa4180f2529e6328d0c7d);
+        
+
+        marker_53b3461c7ad031e573419b653a644117.bindPopup(popup_3fa38f67bc46b7492449e0b2b7f04a5c)
+        ;
+
+        
+    
+    
+            var marker_594dde7be9dd2c2f61c881179c931c96 = L.marker(
+                [37.168, -116.043],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_8c6a06ac2afd146b4fb5ae5da17443ca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_594dde7be9dd2c2f61c881179c931c96.setIcon(icon_8c6a06ac2afd146b4fb5ae5da17443ca);
+        
+    
+        var popup_f57878c8a25574520a1a41e8f7fb71a0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4786842097e5e520e6636b51e2e53c19 = $(`<div id="html_4786842097e5e520e6636b51e2e53c19" style="width: 100.0%; height: 100.0%;"><b>Priscilla</b><br>Date: 06/24/1957<br>Yield: 37 kt</div>`)[0];
+            popup_f57878c8a25574520a1a41e8f7fb71a0.setContent(html_4786842097e5e520e6636b51e2e53c19);
+        
+
+        marker_594dde7be9dd2c2f61c881179c931c96.bindPopup(popup_f57878c8a25574520a1a41e8f7fb71a0)
+        ;
+
+        
+    
+    
+            var marker_b7a39b8b88c4ada1cb1556ac118bd469 = L.marker(
+                [37.17, -116.045],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_892cb325d5ce27874bd0ebad063cfee4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b7a39b8b88c4ada1cb1556ac118bd469.setIcon(icon_892cb325d5ce27874bd0ebad063cfee4);
+        
+    
+        var popup_faa35d3445d256d4d4dc8cd50ff6665d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e2d504c555ca3a5d1065d5924ff1f693 = $(`<div id="html_e2d504c555ca3a5d1065d5924ff1f693" style="width: 100.0%; height: 100.0%;"><b>Coulomb-A</b><br>Date: 07/01/1957<br>Yield: 74 kt</div>`)[0];
+            popup_faa35d3445d256d4d4dc8cd50ff6665d.setContent(html_e2d504c555ca3a5d1065d5924ff1f693);
+        
+
+        marker_b7a39b8b88c4ada1cb1556ac118bd469.bindPopup(popup_faa35d3445d256d4d4dc8cd50ff6665d)
+        ;
+
+        
+    
+    
+            var marker_e757281308f144be7afef1378f92f0f0 = L.marker(
+                [37.052, -116.034],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_33c6621253ec47c49c53117cfbc060bd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e757281308f144be7afef1378f92f0f0.setIcon(icon_33c6621253ec47c49c53117cfbc060bd);
+        
+    
+        var popup_0eff587e340ea11998cf10c143a63d9f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_92d8abb01ec48bd36233abe1a5a944f6 = $(`<div id="html_92d8abb01ec48bd36233abe1a5a944f6" style="width: 100.0%; height: 100.0%;"><b>Hood</b><br>Date: 07/05/1957<br>Yield: 17 kt</div>`)[0];
+            popup_0eff587e340ea11998cf10c143a63d9f.setContent(html_92d8abb01ec48bd36233abe1a5a944f6);
+        
+
+        marker_e757281308f144be7afef1378f92f0f0.bindPopup(popup_0eff587e340ea11998cf10c143a63d9f)
+        ;
+
+        
+    
+    
+            var marker_2fd2f06526016241320d6bd941a847e8 = L.marker(
+                [37.17, -116.045],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_88d2f16beef518833a402d895b3613bc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_2fd2f06526016241320d6bd941a847e8.setIcon(icon_88d2f16beef518833a402d895b3613bc);
+        
+    
+        var popup_5a315633f432dc8aa491f10d01012d23 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0e4211569a3c216f3a001a884ffd915b = $(`<div id="html_0e4211569a3c216f3a001a884ffd915b" style="width: 100.0%; height: 100.0%;"><b>Diablo</b><br>Date: 07/15/1957<br>Yield: 2 kt</div>`)[0];
+            popup_5a315633f432dc8aa491f10d01012d23.setContent(html_0e4211569a3c216f3a001a884ffd915b);
+        
+
+        marker_2fd2f06526016241320d6bd941a847e8.bindPopup(popup_5a315633f432dc8aa491f10d01012d23)
+        ;
+
+        
+    
+    
+            var marker_239b55924558b0f5789e420f9388a16b = L.marker(
+                [37.226, -116.06],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_23e9b074c04197fd0e79f3a0047d38a7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_239b55924558b0f5789e420f9388a16b.setIcon(icon_23e9b074c04197fd0e79f3a0047d38a7);
+        
+    
+        var popup_b79d05c0ca59dce9fb2b8bc673cf67c5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_93cdbf85b73f4fab539329db227b4d38 = $(`<div id="html_93cdbf85b73f4fab539329db227b4d38" style="width: 100.0%; height: 100.0%;"><b>John</b><br>Date: 07/19/1957<br>Yield: 10 kt</div>`)[0];
+            popup_b79d05c0ca59dce9fb2b8bc673cf67c5.setContent(html_93cdbf85b73f4fab539329db227b4d38);
+        
+
+        marker_239b55924558b0f5789e420f9388a16b.bindPopup(popup_b79d05c0ca59dce9fb2b8bc673cf67c5)
+        ;
+
+        
+    
+    
+            var marker_bf6f045b3ef4475b240c25eaf8d44611 = L.marker(
+                [37.17, -116.045],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_1db92a98605febb4272f8cc64c49620b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_bf6f045b3ef4475b240c25eaf8d44611.setIcon(icon_1db92a98605febb4272f8cc64c49620b);
+        
+    
+        var popup_345bac3a95d9e35eaef0d543ccf6e8e4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_525bd6808dddbe6c319ce2e84df7224a = $(`<div id="html_525bd6808dddbe6c319ce2e84df7224a" style="width: 100.0%; height: 100.0%;"><b>Kepler</b><br>Date: 07/24/1957<br>Yield: 9.7 kt</div>`)[0];
+            popup_345bac3a95d9e35eaef0d543ccf6e8e4.setContent(html_525bd6808dddbe6c319ce2e84df7224a);
+        
+
+        marker_bf6f045b3ef4475b240c25eaf8d44611.bindPopup(popup_345bac3a95d9e35eaef0d543ccf6e8e4)
+        ;
+
+        
+    
+    
+            var marker_b1d7bfa0c29f9f2d8b5769a0a0ec8839 = L.marker(
+                [37.052, -116.034],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_d7d7132b4e78ee6acfb2a8d6db9e6f4a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b1d7bfa0c29f9f2d8b5769a0a0ec8839.setIcon(icon_d7d7132b4e78ee6acfb2a8d6db9e6f4a);
+        
+    
+        var popup_e8c6d8cd242cf2532da367cdcb9b51c0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_58a21d3d4a59a7b5d4d9139526df8801 = $(`<div id="html_58a21d3d4a59a7b5d4d9139526df8801" style="width: 100.0%; height: 100.0%;"><b>Owens</b><br>Date: 07/25/1957<br>Yield: 19 kt</div>`)[0];
+            popup_e8c6d8cd242cf2532da367cdcb9b51c0.setContent(html_58a21d3d4a59a7b5d4d9139526df8801);
+        
+
+        marker_b1d7bfa0c29f9f2d8b5769a0a0ec8839.bindPopup(popup_e8c6d8cd242cf2532da367cdcb9b51c0)
+        ;
+
+        
+    
+    
+            var marker_7846f0aa20722810a76fec1fc91f73e4 = L.marker(
+                [37.05, -116.032],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_162b22f7856cff6ec7e61146515c985f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_7846f0aa20722810a76fec1fc91f73e4.setIcon(icon_162b22f7856cff6ec7e61146515c985f);
+        
+    
+        var popup_6cfceb338f29132583536826249933a8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5d600b45b38cb80ad1be01056db5e1fd = $(`<div id="html_5d600b45b38cb80ad1be01056db5e1fd" style="width: 100.0%; height: 100.0%;"><b>Pascal-A</b><br>Date: 07/26/1957<br>Yield: 19 kt</div>`)[0];
+            popup_6cfceb338f29132583536826249933a8.setContent(html_5d600b45b38cb80ad1be01056db5e1fd);
+        
+
+        marker_7846f0aa20722810a76fec1fc91f73e4.bindPopup(popup_6cfceb338f29132583536826249933a8)
+        ;
+
+        
+    
+    
+            var marker_c8768a62923fd22f22e4c4b32e79d657 = L.marker(
+                [37.17, -116.045],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_d84d85afc7981d63ff705c8d7f9bfa59 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c8768a62923fd22f22e4c4b32e79d657.setIcon(icon_d84d85afc7981d63ff705c8d7f9bfa59);
+        
+    
+        var popup_37f8a293b6a0d413cdc7d5928b93224f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_81fb47f77549ffcec8eba001ba44e198 = $(`<div id="html_81fb47f77549ffcec8eba001ba44e198" style="width: 100.0%; height: 100.0%;"><b>Stokes</b><br>Date: 08/07/1957<br>Yield: 1.7 kt</div>`)[0];
+            popup_37f8a293b6a0d413cdc7d5928b93224f.setContent(html_81fb47f77549ffcec8eba001ba44e198);
+        
+
+        marker_c8768a62923fd22f22e4c4b32e79d657.bindPopup(popup_37f8a293b6a0d413cdc7d5928b93224f)
+        ;
+
+        
+    
+    
+            var marker_3af276619b84eca7a833677c06debab4 = L.marker(
+                [37.193, -116.201],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_fc82e53ab1d88a006435f50a64057a30 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_3af276619b84eca7a833677c06debab4.setIcon(icon_fc82e53ab1d88a006435f50a64057a30);
+        
+    
+        var popup_a0726519e7b57425e9a5cdb0f2c00fc7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3f2af15ee69858f10b27e57057c771f5 = $(`<div id="html_3f2af15ee69858f10b27e57057c771f5" style="width: 100.0%; height: 100.0%;"><b>Saturn</b><br>Date: 08/10/1957<br>Yield: 17 kt</div>`)[0];
+            popup_a0726519e7b57425e9a5cdb0f2c00fc7.setContent(html_3f2af15ee69858f10b27e57057c771f5);
+        
+
+        marker_3af276619b84eca7a833677c06debab4.bindPopup(popup_a0726519e7b57425e9a5cdb0f2c00fc7)
+        ;
+
+        
+    
+    
+            var marker_fd88e54779444f3ad513521bc0de8621 = L.marker(
+                [37.17, -116.045],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_fcc25f82c9fbf3514691fa0f7e672741 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_fd88e54779444f3ad513521bc0de8621.setIcon(icon_fcc25f82c9fbf3514691fa0f7e672741);
+        
+    
+        var popup_2206513d429cab015381a6a9f18951dc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f6770e94f73950d8b2dea7678c696a0e = $(`<div id="html_f6770e94f73950d8b2dea7678c696a0e" style="width: 100.0%; height: 100.0%;"><b>Shasta</b><br>Date: 08/18/1957<br>Yield: 11 kt</div>`)[0];
+            popup_2206513d429cab015381a6a9f18951dc.setContent(html_f6770e94f73950d8b2dea7678c696a0e);
+        
+
+        marker_fd88e54779444f3ad513521bc0de8621.bindPopup(popup_2206513d429cab015381a6a9f18951dc)
+        ;
+
+        
+    
+    
+            var marker_0d2ee670a50367536226ee4383b2fc57 = L.marker(
+                [37.049, -116.035],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_b7d0094b4d958259b864dde3e96eea71 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_0d2ee670a50367536226ee4383b2fc57.setIcon(icon_b7d0094b4d958259b864dde3e96eea71);
+        
+    
+        var popup_0e525f10048ebc8eee22e02c8e3ac9a0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_22ffc1bd627648f2033728e480564fb8 = $(`<div id="html_22ffc1bd627648f2033728e480564fb8" style="width: 100.0%; height: 100.0%;"><b>Doppler</b><br>Date: 08/23/1957<br>Yield: 4.7 kt</div>`)[0];
+            popup_0e525f10048ebc8eee22e02c8e3ac9a0.setContent(html_22ffc1bd627648f2033728e480564fb8);
+        
+
+        marker_0d2ee670a50367536226ee4383b2fc57.bindPopup(popup_0e525f10048ebc8eee22e02c8e3ac9a0)
+        ;
+
+        
+    
+    
+            var marker_e971718552a5b9757b0327008565ca06 = L.marker(
+                [37.05, -116.031],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_1727004b56c39d4cb15df050a18eb3c3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e971718552a5b9757b0327008565ca06.setIcon(icon_1727004b56c39d4cb15df050a18eb3c3);
+        
+    
+        var popup_04fcb0d81eed3f6b3b91798d97b1dc97 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cc90d0160d34b21f337748faa2e245d7 = $(`<div id="html_cc90d0160d34b21f337748faa2e245d7" style="width: 100.0%; height: 100.0%;"><b>Pascal-B</b><br>Date: 08/27/1957<br>Yield: 4.7 kt</div>`)[0];
+            popup_04fcb0d81eed3f6b3b91798d97b1dc97.setContent(html_cc90d0160d34b21f337748faa2e245d7);
+        
+
+        marker_e971718552a5b9757b0327008565ca06.bindPopup(popup_04fcb0d81eed3f6b3b91798d97b1dc97)
+        ;
+
+        
+    
+    
+            var marker_fc3d86ddee15978be759be0a274dfb7e = L.marker(
+                [37.17, -116.045],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_729d72ffd2aa11fccadc3cce9d3744cd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_fc3d86ddee15978be759be0a274dfb7e.setIcon(icon_729d72ffd2aa11fccadc3cce9d3744cd);
+        
+    
+        var popup_144f632d43c53b527dea065de81d97f7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_54a5b3501e37a8522ee3206b4dea347e = $(`<div id="html_54a5b3501e37a8522ee3206b4dea347e" style="width: 100.0%; height: 100.0%;"><b>Franklin Prime</b><br>Date: 08/30/1957<br>Yield: 44 kt</div>`)[0];
+            popup_144f632d43c53b527dea065de81d97f7.setContent(html_54a5b3501e37a8522ee3206b4dea347e);
+        
+
+        marker_fc3d86ddee15978be759be0a274dfb7e.bindPopup(popup_144f632d43c53b527dea065de81d97f7)
+        ;
+
+        
+    
+    
+            var marker_badea77ab63eb3b63cf6c88577833de3 = L.marker(
+                [37.17, -116.045],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_a4f2580527498edd756cb321d7b07597 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_badea77ab63eb3b63cf6c88577833de3.setIcon(icon_a4f2580527498edd756cb321d7b07597);
+        
+    
+        var popup_8ae56227776279ef376dedc026faacfa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_369e49ac1c5354a5e3d44bca4ddd14d8 = $(`<div id="html_369e49ac1c5354a5e3d44bca4ddd14d8" style="width: 100.0%; height: 100.0%;"><b>Smoky</b><br>Date: 08/31/1957<br>Yield: 11 kt</div>`)[0];
+            popup_8ae56227776279ef376dedc026faacfa.setContent(html_369e49ac1c5354a5e3d44bca4ddd14d8);
+        
+
+        marker_badea77ab63eb3b63cf6c88577833de3.bindPopup(popup_8ae56227776279ef376dedc026faacfa)
+        ;
+
+        
+    
+    
+            var marker_102dd948a56888efa51d64f75d61e624 = L.marker(
+                [37.17, -116.045],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_cdb5441337bcb2c24fbb3709a5fd5d2f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_102dd948a56888efa51d64f75d61e624.setIcon(icon_cdb5441337bcb2c24fbb3709a5fd5d2f);
+        
+    
+        var popup_b6c93e17b08f533b7e1d0759a0014b24 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3b815d64acba288552dc17e5f99a716f = $(`<div id="html_3b815d64acba288552dc17e5f99a716f" style="width: 100.0%; height: 100.0%;"><b>Galileo</b><br>Date: 09/02/1957<br>Yield: 197 tons</div>`)[0];
+            popup_b6c93e17b08f533b7e1d0759a0014b24.setContent(html_3b815d64acba288552dc17e5f99a716f);
+        
+
+        marker_102dd948a56888efa51d64f75d61e624.bindPopup(popup_b6c93e17b08f533b7e1d0759a0014b24)
+        ;
+
+        
+    
+    
+            var marker_cbcd3f414427768997106a38641353ad = L.marker(
+                [37.052, -116.034],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_4a4f52d93ec5e41796ad73f3ca96d878 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_cbcd3f414427768997106a38641353ad.setIcon(icon_4a4f52d93ec5e41796ad73f3ca96d878);
+        
+    
+        var popup_0f0978daa9431e87ce6dd365536ffd47 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ebd3b7fad49bdb863b9a3f0d7ea5a7f1 = $(`<div id="html_ebd3b7fad49bdb863b9a3f0d7ea5a7f1" style="width: 100.0%; height: 100.0%;"><b>Wheeler</b><br>Date: 09/06/1957<br>Yield: 1.3 kt</div>`)[0];
+            popup_0f0978daa9431e87ce6dd365536ffd47.setContent(html_ebd3b7fad49bdb863b9a3f0d7ea5a7f1);
+        
+
+        marker_cbcd3f414427768997106a38641353ad.bindPopup(popup_0f0978daa9431e87ce6dd365536ffd47)
+        ;
+
+        
+    
+    
+            var marker_de41bebc87947da3c21e7909720c8cab = L.marker(
+                [37.193, -116.201],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_4a49f477e1908764b13b778e120fe07c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_de41bebc87947da3c21e7909720c8cab.setIcon(icon_4a49f477e1908764b13b778e120fe07c);
+        
+    
+        var popup_975786730fda8417e4b5e703b4a93d36 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2cbbcd3d6d995b2ffeaa9593da9f4363 = $(`<div id="html_2cbbcd3d6d995b2ffeaa9593da9f4363" style="width: 100.0%; height: 100.0%;"><b>Coulomb-B</b><br>Date: 09/06/1957<br>Yield: 1 kt</div>`)[0];
+            popup_975786730fda8417e4b5e703b4a93d36.setContent(html_2cbbcd3d6d995b2ffeaa9593da9f4363);
+        
+
+        marker_de41bebc87947da3c21e7909720c8cab.bindPopup(popup_975786730fda8417e4b5e703b4a93d36)
+        ;
+
+        
+    
+    
+            var marker_c740edb3a59a9f989da4a759848be0ac = L.marker(
+                [37.17, -116.045],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_31996c6c6da409808e395f09629382c4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c740edb3a59a9f989da4a759848be0ac.setIcon(icon_31996c6c6da409808e395f09629382c4);
+        
+    
+        var popup_6de2ffa5d7e3134460a85ed46675db44 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_51a38778b28d4e4d92e38037ed9b03cb = $(`<div id="html_51a38778b28d4e4d92e38037ed9b03cb" style="width: 100.0%; height: 100.0%;"><b>Laplace</b><br>Date: 09/08/1957<br>Yield: 22 kt</div>`)[0];
+            popup_6de2ffa5d7e3134460a85ed46675db44.setContent(html_51a38778b28d4e4d92e38037ed9b03cb);
+        
+
+        marker_c740edb3a59a9f989da4a759848be0ac.bindPopup(popup_6de2ffa5d7e3134460a85ed46675db44)
+        ;
+
+        
+    
+    
+            var marker_0db67487fa70163ad50ca057bc36a003 = L.marker(
+                [37.17, -116.045],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_09134c611f5a9f45b349b8d84fe80b30 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_0db67487fa70163ad50ca057bc36a003.setIcon(icon_09134c611f5a9f45b349b8d84fe80b30);
+        
+    
+        var popup_3648cef2c10abddc9c8df5c00a38e87b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2fda3972fe73d821a8d6599d5d8503b4 = $(`<div id="html_2fda3972fe73d821a8d6599d5d8503b4" style="width: 100.0%; height: 100.0%;"><b>Fizeau</b><br>Date: 09/14/1957<br>Yield: 11 kt</div>`)[0];
+            popup_3648cef2c10abddc9c8df5c00a38e87b.setContent(html_2fda3972fe73d821a8d6599d5d8503b4);
+        
+
+        marker_0db67487fa70163ad50ca057bc36a003.bindPopup(popup_3648cef2c10abddc9c8df5c00a38e87b)
+        ;
+
+        
+    
+    
+            var marker_bb44eee72e62dd8553475408e3469917 = L.marker(
+                [37.196, -116.204],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_d41119d699cbb758d02131cfca7f2523 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_bb44eee72e62dd8553475408e3469917.setIcon(icon_d41119d699cbb758d02131cfca7f2523);
+        
+    
+        var popup_e0e0119ef2168f5df0776cf3aac6ac91 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_325d7293cb9fd36e84491520bf29004d = $(`<div id="html_325d7293cb9fd36e84491520bf29004d" style="width: 100.0%; height: 100.0%;"><b>Newton</b><br>Date: 09/16/1957<br>Yield: 1.7 kt</div>`)[0];
+            popup_e0e0119ef2168f5df0776cf3aac6ac91.setContent(html_325d7293cb9fd36e84491520bf29004d);
+        
+
+        marker_bb44eee72e62dd8553475408e3469917.bindPopup(popup_e0e0119ef2168f5df0776cf3aac6ac91)
+        ;
+
+        
+    
+    
+            var marker_3f512a75a26cff920a0fc95608cc4521 = L.marker(
+                [37.113, -116.115],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_27101a6cb55990b44cc1536acf14f0dd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_3f512a75a26cff920a0fc95608cc4521.setIcon(icon_27101a6cb55990b44cc1536acf14f0dd);
+        
+    
+        var popup_6c6f02a6cf58e80146c63120a92d6f80 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_31fe6c4cb6dceeb4310bccede8302c44 = $(`<div id="html_31fe6c4cb6dceeb4310bccede8302c44" style="width: 100.0%; height: 100.0%;"><b>Rainier</b><br>Date: 09/19/1957<br>Yield: 1.7 kt</div>`)[0];
+            popup_6c6f02a6cf58e80146c63120a92d6f80.setContent(html_31fe6c4cb6dceeb4310bccede8302c44);
+        
+
+        marker_3f512a75a26cff920a0fc95608cc4521.bindPopup(popup_6c6f02a6cf58e80146c63120a92d6f80)
+        ;
+
+        
+    
+    
+            var marker_41c66b7fae73aab50ebd37c514e991e9 = L.marker(
+                [37.17, -116.045],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_3974fe5e47d3adc9ddc21c4a73ca9d98 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_41c66b7fae73aab50ebd37c514e991e9.setIcon(icon_3974fe5e47d3adc9ddc21c4a73ca9d98);
+        
+    
+        var popup_db7941405082679cc98cc06ca9b89bdb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4d5ace9669094868d43b30d67d7112ca = $(`<div id="html_4d5ace9669094868d43b30d67d7112ca" style="width: 100.0%; height: 100.0%;"><b>Whitney</b><br>Date: 09/23/1957<br>Yield: 19 kt</div>`)[0];
+            popup_db7941405082679cc98cc06ca9b89bdb.setContent(html_4d5ace9669094868d43b30d67d7112ca);
+        
+
+        marker_41c66b7fae73aab50ebd37c514e991e9.bindPopup(popup_db7941405082679cc98cc06ca9b89bdb)
+        ;
+
+        
+    
+    
+            var marker_df7a44e315bb4ea9b7bcaa6c40d9ac53 = L.marker(
+                [37.052, -116.034],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_8109df0fa32070f4cea4d7e46981b967 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_df7a44e315bb4ea9b7bcaa6c40d9ac53.setIcon(icon_8109df0fa32070f4cea4d7e46981b967);
+        
+    
+        var popup_22c1f1b9c4d5e1c584f926e232ad7916 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ce4d7e1d75ee7fa2d3fa8fc5d03f8853 = $(`<div id="html_ce4d7e1d75ee7fa2d3fa8fc5d03f8853" style="width: 100.0%; height: 100.0%;"><b>Charleston</b><br>Date: 09/28/1957<br>Yield: 8 kt</div>`)[0];
+            popup_22c1f1b9c4d5e1c584f926e232ad7916.setContent(html_ce4d7e1d75ee7fa2d3fa8fc5d03f8853);
+        
+
+        marker_df7a44e315bb4ea9b7bcaa6c40d9ac53.bindPopup(popup_22c1f1b9c4d5e1c584f926e232ad7916)
+        ;
+
+        
+    
+    
+            var marker_b511a0e2a408d1a7e904dbefbfee7bba = L.marker(
+                [37.052, -116.034],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_669e1503259415c930b00a24c8f3f96f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b511a0e2a408d1a7e904dbefbfee7bba.setIcon(icon_669e1503259415c930b00a24c8f3f96f);
+        
+    
+        var popup_171dcb473635c27dd2aae77ce7494e16 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d367dba9be711fdb0a00b65ce1dc22f0 = $(`<div id="html_d367dba9be711fdb0a00b65ce1dc22f0" style="width: 100.0%; height: 100.0%;"><b>Morgan</b><br>Date: 10/07/1957<br>Yield: 1.3 kt</div>`)[0];
+            popup_171dcb473635c27dd2aae77ce7494e16.setContent(html_d367dba9be711fdb0a00b65ce1dc22f0);
+        
+
+        marker_b511a0e2a408d1a7e904dbefbfee7bba.bindPopup(popup_171dcb473635c27dd2aae77ce7494e16)
+        ;
+
+        
+    
+    
+            var marker_f1d1e68c982165478d7c50eb0f17c6c7 = L.marker(
+                [37.05, -116.032],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_8c748c02f99b343cf5dd67dcd1d016e2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f1d1e68c982165478d7c50eb0f17c6c7.setIcon(icon_8c748c02f99b343cf5dd67dcd1d016e2);
+        
+    
+        var popup_93deaa460036dd43f881e6bd156b70e5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_48649828a50a12d5e767e459c9ce382c = $(`<div id="html_48649828a50a12d5e767e459c9ce382c" style="width: 100.0%; height: 100.0%;"><b>Pascal-C</b><br>Date: 12/06/1957<br>Yield: 0 kt</div>`)[0];
+            popup_93deaa460036dd43f881e6bd156b70e5.setContent(html_48649828a50a12d5e767e459c9ce382c);
+        
+
+        marker_f1d1e68c982165478d7c50eb0f17c6c7.bindPopup(popup_93deaa460036dd43f881e6bd156b70e5)
+        ;
+
+        
+    
+    
+            var marker_8c91e573af380a1ce249463822e3edce = L.marker(
+                [37.127, -116.05],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_1af87c6a93a6401e29356a2da6293052 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_8c91e573af380a1ce249463822e3edce.setIcon(icon_1af87c6a93a6401e29356a2da6293052);
+        
+    
+        var popup_89ca41316788850a452fc115228581c6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dc505dc866eb85ea3a96dd780c3f02bd = $(`<div id="html_dc505dc866eb85ea3a96dd780c3f02bd" style="width: 100.0%; height: 100.0%;"><b>Coulomb-C</b><br>Date: 12/09/1957<br>Yield: 0.5 tons</div>`)[0];
+            popup_89ca41316788850a452fc115228581c6.setContent(html_dc505dc866eb85ea3a96dd780c3f02bd);
+        
+
+        marker_8c91e573af380a1ce249463822e3edce.bindPopup(popup_89ca41316788850a452fc115228581c6)
+        ;
+
+        
+    
+    
+            var marker_b5c0c081c758c3a08c2c89ae7c53c9c8 = L.marker(
+                [37.113, -116.115],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_2e6a6bc17f6ae8279282dc3295d8469b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b5c0c081c758c3a08c2c89ae7c53c9c8.setIcon(icon_2e6a6bc17f6ae8279282dc3295d8469b);
+        
+    
+        var popup_e83478aa39251d95c576658dc611d638 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8122fcc4db972636f5ab3f90b1fa5c03 = $(`<div id="html_8122fcc4db972636f5ab3f90b1fa5c03" style="width: 100.0%; height: 100.0%;"><b>Venus</b><br>Date: 02/22/1958<br>Yield: 0 kt</div>`)[0];
+            popup_e83478aa39251d95c576658dc611d638.setContent(html_8122fcc4db972636f5ab3f90b1fa5c03);
+        
+
+        marker_b5c0c081c758c3a08c2c89ae7c53c9c8.bindPopup(popup_e83478aa39251d95c576658dc611d638)
+        ;
+
+        
+    
+    
+            var marker_56d81c1c9d322e01236f059b79f667ee = L.marker(
+                [37.113, -116.115],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_decea79d777b56ee64aafb8506f6b53b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_56d81c1c9d322e01236f059b79f667ee.setIcon(icon_decea79d777b56ee64aafb8506f6b53b);
+        
+    
+        var popup_362b32616bad6c71c68bf1f9e6324b6a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e60dad50a127b991f99bb5811d62cc43 = $(`<div id="html_e60dad50a127b991f99bb5811d62cc43" style="width: 100.0%; height: 100.0%;"><b>Uranus</b><br>Date: 03/14/1958<br>Yield: 0 kt</div>`)[0];
+            popup_362b32616bad6c71c68bf1f9e6324b6a.setContent(html_e60dad50a127b991f99bb5811d62cc43);
+        
+
+        marker_56d81c1c9d322e01236f059b79f667ee.bindPopup(popup_362b32616bad6c71c68bf1f9e6324b6a)
+        ;
+
+        
+    
+    
+            var marker_20a0a38a5244a4c7d67ceab75c67b02a = L.marker(
+                [12.62, 163.02],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_0f3ea25e1740fe969d0101c839a14ed5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_20a0a38a5244a4c7d67ceab75c67b02a.setIcon(icon_0f3ea25e1740fe969d0101c839a14ed5);
+        
+    
+        var popup_b0eaca0b909eaeaecae73e02720ed228 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_97518943b6709c8d4e4da5d541ce8d76 = $(`<div id="html_97518943b6709c8d4e4da5d541ce8d76" style="width: 100.0%; height: 100.0%;"><b>Yucca</b><br>Date: 04/28/1958<br>Yield: 1.7 kt</div>`)[0];
+            popup_b0eaca0b909eaeaecae73e02720ed228.setContent(html_97518943b6709c8d4e4da5d541ce8d76);
+        
+
+        marker_20a0a38a5244a4c7d67ceab75c67b02a.bindPopup(popup_b0eaca0b909eaeaecae73e02720ed228)
+        ;
+
+        
+    
+    
+            var marker_adad3e2b4ee785f11f9f3b9f944537a6 = L.marker(
+                [11.667, 162.35],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_6bb2c33ccb260725bb9a78a26d6be64c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_adad3e2b4ee785f11f9f3b9f944537a6.setIcon(icon_6bb2c33ccb260725bb9a78a26d6be64c);
+        
+    
+        var popup_f2ff805af6313b3e8dcbf559da196e2e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aafc4039583991424f35f5737b9cb6a5 = $(`<div id="html_aafc4039583991424f35f5737b9cb6a5" style="width: 100.0%; height: 100.0%;"><b>Cactus</b><br>Date: 05/05/1958<br>Yield: 18 kt</div>`)[0];
+            popup_f2ff805af6313b3e8dcbf559da196e2e.setContent(html_aafc4039583991424f35f5737b9cb6a5);
+        
+
+        marker_adad3e2b4ee785f11f9f3b9f944537a6.bindPopup(popup_f2ff805af6313b3e8dcbf559da196e2e)
+        ;
+
+        
+    
+    
+            var marker_f248c2ee623803e8b7438c26c1905645 = L.marker(
+                [11.567, 165.383],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_64d5f53d45a7bf70d0000a3f037af571 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f248c2ee623803e8b7438c26c1905645.setIcon(icon_64d5f53d45a7bf70d0000a3f037af571);
+        
+    
+        var popup_dfa2f3f1251156607a1b2b4ca4a035fc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1adbf384124ea80e1efa48f51ac77792 = $(`<div id="html_1adbf384124ea80e1efa48f51ac77792" style="width: 100.0%; height: 100.0%;"><b>Fir</b><br>Date: 05/11/1958<br>Yield: 81 kt</div>`)[0];
+            popup_dfa2f3f1251156607a1b2b4ca4a035fc.setContent(html_1adbf384124ea80e1efa48f51ac77792);
+        
+
+        marker_f248c2ee623803e8b7438c26c1905645.bindPopup(popup_dfa2f3f1251156607a1b2b4ca4a035fc)
+        ;
+
+        
+    
+    
+            var marker_7e1a71183e19a86433de700d33cf4164 = L.marker(
+                [11.667, 162.35],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_75ac96e3d5d49a71fa40756e2e014ff3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_7e1a71183e19a86433de700d33cf4164.setIcon(icon_75ac96e3d5d49a71fa40756e2e014ff3);
+        
+    
+        var popup_d5d42870946f100da4678213ee8bcf86 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f6128842f6634350d3e8141bcb6ccc66 = $(`<div id="html_f6128842f6634350d3e8141bcb6ccc66" style="width: 100.0%; height: 100.0%;"><b>Butternut</b><br>Date: 05/11/1958<br>Yield: 1.37 Mt</div>`)[0];
+            popup_d5d42870946f100da4678213ee8bcf86.setContent(html_f6128842f6634350d3e8141bcb6ccc66);
+        
+
+        marker_7e1a71183e19a86433de700d33cf4164.bindPopup(popup_d5d42870946f100da4678213ee8bcf86)
+        ;
+
+        
+    
+    
+            var marker_a9ab42525a19fda54c80e3eabadfb546 = L.marker(
+                [11.667, 162.35],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_427f9bb110827ad9b9afa3d993ebfad1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a9ab42525a19fda54c80e3eabadfb546.setIcon(icon_427f9bb110827ad9b9afa3d993ebfad1);
+        
+    
+        var popup_1642cf0b3e99fbdfdea237048d7e2177 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6aaa47935fa618a40b0a35384ed6ad8b = $(`<div id="html_6aaa47935fa618a40b0a35384ed6ad8b" style="width: 100.0%; height: 100.0%;"><b>Koa</b><br>Date: 05/12/1958<br>Yield: 9 kt</div>`)[0];
+            popup_1642cf0b3e99fbdfdea237048d7e2177.setContent(html_6aaa47935fa618a40b0a35384ed6ad8b);
+        
+
+        marker_a9ab42525a19fda54c80e3eabadfb546.bindPopup(popup_1642cf0b3e99fbdfdea237048d7e2177)
+        ;
+
+        
+    
+    
+            var marker_6766baef4240ad537e5ddd97463b69b2 = L.marker(
+                [11.667, 162.35],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_15adee9cb2d7ad8d3d60f171a7a01774 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_6766baef4240ad537e5ddd97463b69b2.setIcon(icon_15adee9cb2d7ad8d3d60f171a7a01774);
+        
+    
+        var popup_22a95db5771f0768716d06b1f1cf132b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_411345e935c34eefa7daf3e29d8c8313 = $(`<div id="html_411345e935c34eefa7daf3e29d8c8313" style="width: 100.0%; height: 100.0%;"><b>Wahoo</b><br>Date: 05/16/1958<br>Yield: 5.9 kt</div>`)[0];
+            popup_22a95db5771f0768716d06b1f1cf132b.setContent(html_411345e935c34eefa7daf3e29d8c8313);
+        
+
+        marker_6766baef4240ad537e5ddd97463b69b2.bindPopup(popup_22a95db5771f0768716d06b1f1cf132b)
+        ;
+
+        
+    
+    
+            var marker_a61047e95c1290af28f24762ffd11e1b = L.marker(
+                [11.667, 162.35],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_1ef8eee0823fad0069fa08f4f3189997 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a61047e95c1290af28f24762ffd11e1b.setIcon(icon_1ef8eee0823fad0069fa08f4f3189997);
+        
+    
+        var popup_e59e09657e95f1daf8d15869790480a3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_12b15a365b5d0571899f13e4ddb0b133 = $(`<div id="html_12b15a365b5d0571899f13e4ddb0b133" style="width: 100.0%; height: 100.0%;"><b>Holly</b><br>Date: 05/20/1958<br>Yield: 25.1 kt</div>`)[0];
+            popup_e59e09657e95f1daf8d15869790480a3.setContent(html_12b15a365b5d0571899f13e4ddb0b133);
+        
+
+        marker_a61047e95c1290af28f24762ffd11e1b.bindPopup(popup_e59e09657e95f1daf8d15869790480a3)
+        ;
+
+        
+    
+    
+            var marker_df1220cecb7d4fafa9780778cd975d5b = L.marker(
+                [11.567, 165.383],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_bd4157fe4201575cf8344b7cde515787 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_df1220cecb7d4fafa9780778cd975d5b.setIcon(icon_bd4157fe4201575cf8344b7cde515787);
+        
+    
+        var popup_ad531ca218377c0bc49d6b332da86b64 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1b9167130f10e4b44c5158fc75f8e29b = $(`<div id="html_1b9167130f10e4b44c5158fc75f8e29b" style="width: 100.0%; height: 100.0%;"><b>Nutmeg</b><br>Date: 05/21/1958<br>Yield: 330 kt</div>`)[0];
+            popup_ad531ca218377c0bc49d6b332da86b64.setContent(html_1b9167130f10e4b44c5158fc75f8e29b);
+        
+
+        marker_df1220cecb7d4fafa9780778cd975d5b.bindPopup(popup_ad531ca218377c0bc49d6b332da86b64)
+        ;
+
+        
+    
+    
+            var marker_d5d2c0a7dbe14a1633e4adc7ccb3926a = L.marker(
+                [11.667, 162.35],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_8b0c8eb2769bc61ef6b2c88daf938b2a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d5d2c0a7dbe14a1633e4adc7ccb3926a.setIcon(icon_8b0c8eb2769bc61ef6b2c88daf938b2a);
+        
+    
+        var popup_20c6d1185d6311c6907aabe7a7fb50ad = L.popup({"maxWidth": "100%"});
+
+        
+            var html_66c30fc2975c4b37a70f3e1d03f87d02 = $(`<div id="html_66c30fc2975c4b37a70f3e1d03f87d02" style="width: 100.0%; height: 100.0%;"><b>Yellowwood</b><br>Date: 05/26/1958<br>Yield: 57 kt</div>`)[0];
+            popup_20c6d1185d6311c6907aabe7a7fb50ad.setContent(html_66c30fc2975c4b37a70f3e1d03f87d02);
+        
+
+        marker_d5d2c0a7dbe14a1633e4adc7ccb3926a.bindPopup(popup_20c6d1185d6311c6907aabe7a7fb50ad)
+        ;
+
+        
+    
+    
+            var marker_0e5a2ea8eaabd05e9284850ad98186d0 = L.marker(
+                [11.667, 162.35],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_ff8c7bf74889b8e18efbf2a110aaa4ee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_0e5a2ea8eaabd05e9284850ad98186d0.setIcon(icon_ff8c7bf74889b8e18efbf2a110aaa4ee);
+        
+    
+        var popup_88db15d7743ac7911d142eaadca81e87 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_996ed66afcc5d0727dc64c0a363cd1d4 = $(`<div id="html_996ed66afcc5d0727dc64c0a363cd1d4" style="width: 100.0%; height: 100.0%;"><b>Magnolia</b><br>Date: 05/26/1958<br>Yield: 11.6 kt</div>`)[0];
+            popup_88db15d7743ac7911d142eaadca81e87.setContent(html_996ed66afcc5d0727dc64c0a363cd1d4);
+        
+
+        marker_0e5a2ea8eaabd05e9284850ad98186d0.bindPopup(popup_88db15d7743ac7911d142eaadca81e87)
+        ;
+
+        
+    
+    
+            var marker_52bbd1a5ec5ec367a279bc0e66692846 = L.marker(
+                [11.667, 162.35],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_ad4b5d10cf7bec4986f6d251caf54939 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_52bbd1a5ec5ec367a279bc0e66692846.setIcon(icon_ad4b5d10cf7bec4986f6d251caf54939);
+        
+    
+        var popup_44508d118f69440dce51e56b299b82b2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ad2252b2caa71040abe8165ddef86765 = $(`<div id="html_ad2252b2caa71040abe8165ddef86765" style="width: 100.0%; height: 100.0%;"><b>Tobacco</b><br>Date: 05/30/1958<br>Yield: 92 kt</div>`)[0];
+            popup_44508d118f69440dce51e56b299b82b2.setContent(html_ad2252b2caa71040abe8165ddef86765);
+        
+
+        marker_52bbd1a5ec5ec367a279bc0e66692846.bindPopup(popup_44508d118f69440dce51e56b299b82b2)
+        ;
+
+        
+    
+    
+            var marker_8540d43846bfeeb02c88c320c402aa34 = L.marker(
+                [11.567, 165.383],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_5bb1ded40f54dcbcbbfb7d25a0cb769a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_8540d43846bfeeb02c88c320c402aa34.setIcon(icon_5bb1ded40f54dcbcbbfb7d25a0cb769a);
+        
+    
+        var popup_c5556b57619adf600736f950b92bddd7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_06c50b664698403cc8bc640701a7de87 = $(`<div id="html_06c50b664698403cc8bc640701a7de87" style="width: 100.0%; height: 100.0%;"><b>Sycamore</b><br>Date: 05/31/1958<br>Yield: 15 kt</div>`)[0];
+            popup_c5556b57619adf600736f950b92bddd7.setContent(html_06c50b664698403cc8bc640701a7de87);
+        
+
+        marker_8540d43846bfeeb02c88c320c402aa34.bindPopup(popup_c5556b57619adf600736f950b92bddd7)
+        ;
+
+        
+    
+    
+            var marker_8c52b2e61bf1f3df0506cc06c5f21645 = L.marker(
+                [11.667, 162.35],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_ff628b92778d02df3f88314f02b00db0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_8c52b2e61bf1f3df0506cc06c5f21645.setIcon(icon_ff628b92778d02df3f88314f02b00db0);
+        
+    
+        var popup_4cf95f7e95a67b96419e81aa45ccab5d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a45d15da5daaf92ee0427a5d39d17faa = $(`<div id="html_a45d15da5daaf92ee0427a5d39d17faa" style="width: 100.0%; height: 100.0%;"><b>Rose</b><br>Date: 06/02/1958<br>Yield: 8 kt</div>`)[0];
+            popup_4cf95f7e95a67b96419e81aa45ccab5d.setContent(html_a45d15da5daaf92ee0427a5d39d17faa);
+        
+
+        marker_8c52b2e61bf1f3df0506cc06c5f21645.bindPopup(popup_4cf95f7e95a67b96419e81aa45ccab5d)
+        ;
+
+        
+    
+    
+            var marker_7329ac0865d7c95c3bd763f07f863baa = L.marker(
+                [11.667, 162.35],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_6d0cd3677f2fa6debc955bb2e1f4a8a6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_7329ac0865d7c95c3bd763f07f863baa.setIcon(icon_6d0cd3677f2fa6debc955bb2e1f4a8a6);
+        
+    
+        var popup_056d4a3e821c7038e8c65c4cc247a961 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2974244a944e50b786b517299f8371fd = $(`<div id="html_2974244a944e50b786b517299f8371fd" style="width: 100.0%; height: 100.0%;"><b>Umbrella</b><br>Date: 06/08/1958<br>Yield: 213 kt</div>`)[0];
+            popup_056d4a3e821c7038e8c65c4cc247a961.setContent(html_2974244a944e50b786b517299f8371fd);
+        
+
+        marker_7329ac0865d7c95c3bd763f07f863baa.bindPopup(popup_056d4a3e821c7038e8c65c4cc247a961)
+        ;
+
+        
+    
+    
+            var marker_8cac52f816fe2fc6314079fde64fc212 = L.marker(
+                [11.567, 165.383],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_95ff77f00a00c37d351d4b3401ba0e58 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_8cac52f816fe2fc6314079fde64fc212.setIcon(icon_95ff77f00a00c37d351d4b3401ba0e58);
+        
+    
+        var popup_01831d038af65ec6e49eeb1892a3075e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_133b1369507f32e2177a465feb23f7da = $(`<div id="html_133b1369507f32e2177a465feb23f7da" style="width: 100.0%; height: 100.0%;"><b>Maple</b><br>Date: 06/10/1958<br>Yield: 319 kt</div>`)[0];
+            popup_01831d038af65ec6e49eeb1892a3075e.setContent(html_133b1369507f32e2177a465feb23f7da);
+        
+
+        marker_8cac52f816fe2fc6314079fde64fc212.bindPopup(popup_01831d038af65ec6e49eeb1892a3075e)
+        ;
+
+        
+    
+    
+            var marker_0315f04962b69ff560744cadaf02e16c = L.marker(
+                [11.567, 165.383],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_e4efe5a908cc90c8127e1b439036eaac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_0315f04962b69ff560744cadaf02e16c.setIcon(icon_e4efe5a908cc90c8127e1b439036eaac);
+        
+    
+        var popup_db92e4600dd3b75ac396e9e5b7ad4822 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c62c64c13ff3fee67982adca62fbd46b = $(`<div id="html_c62c64c13ff3fee67982adca62fbd46b" style="width: 100.0%; height: 100.0%;"><b>Aspen</b><br>Date: 06/14/1958<br>Yield: 1.45 Mt</div>`)[0];
+            popup_db92e4600dd3b75ac396e9e5b7ad4822.setContent(html_c62c64c13ff3fee67982adca62fbd46b);
+        
+
+        marker_0315f04962b69ff560744cadaf02e16c.bindPopup(popup_db92e4600dd3b75ac396e9e5b7ad4822)
+        ;
+
+        
+    
+    
+            var marker_f2dbb04e86b32486ee78882421d9bb94 = L.marker(
+                [11.667, 162.35],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_7f2ca0d4614a8cf7e163fff82155a25f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f2dbb04e86b32486ee78882421d9bb94.setIcon(icon_7f2ca0d4614a8cf7e163fff82155a25f);
+        
+    
+        var popup_e37bf5f8637e93198d31e0ef9127e624 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c04a26c0fb345877b7d74acd4ef54513 = $(`<div id="html_c04a26c0fb345877b7d74acd4ef54513" style="width: 100.0%; height: 100.0%;"><b>Walnut</b><br>Date: 06/14/1958<br>Yield: 2 Mt</div>`)[0];
+            popup_e37bf5f8637e93198d31e0ef9127e624.setContent(html_c04a26c0fb345877b7d74acd4ef54513);
+        
+
+        marker_f2dbb04e86b32486ee78882421d9bb94.bindPopup(popup_e37bf5f8637e93198d31e0ef9127e624)
+        ;
+
+        
+    
+    
+            var marker_bece77dd53d9560fe2127bbfa307bc6a = L.marker(
+                [11.667, 162.35],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_e4a9038fb49c1e9c2a0369b0c2e5da8e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_bece77dd53d9560fe2127bbfa307bc6a.setIcon(icon_e4a9038fb49c1e9c2a0369b0c2e5da8e);
+        
+    
+        var popup_b2346c581ba253d9112ebf31040a7d0a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ea62384208237c8b38f9ad99afc3dd30 = $(`<div id="html_ea62384208237c8b38f9ad99afc3dd30" style="width: 100.0%; height: 100.0%;"><b>Linden</b><br>Date: 06/18/1958<br>Yield: 11 kt</div>`)[0];
+            popup_b2346c581ba253d9112ebf31040a7d0a.setContent(html_ea62384208237c8b38f9ad99afc3dd30);
+        
+
+        marker_bece77dd53d9560fe2127bbfa307bc6a.bindPopup(popup_b2346c581ba253d9112ebf31040a7d0a)
+        ;
+
+        
+    
+    
+            var marker_59059324257f8b1e581a54d21b32d569 = L.marker(
+                [11.567, 165.383],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_3cd214d993361be1c9f0bb4d436d179e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_59059324257f8b1e581a54d21b32d569.setIcon(icon_3cd214d993361be1c9f0bb4d436d179e);
+        
+    
+        var popup_d8e46f3d4c13686428c8f661623a2d6e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6514aa83065f13773d7684206a7a9468 = $(`<div id="html_6514aa83065f13773d7684206a7a9468" style="width: 100.0%; height: 100.0%;"><b>Redwood</b><br>Date: 06/27/1958<br>Yield: 412 kt</div>`)[0];
+            popup_d8e46f3d4c13686428c8f661623a2d6e.setContent(html_6514aa83065f13773d7684206a7a9468);
+        
+
+        marker_59059324257f8b1e581a54d21b32d569.bindPopup(popup_d8e46f3d4c13686428c8f661623a2d6e)
+        ;
+
+        
+    
+    
+            var marker_9f09a4a094579a7af636731e735b6210 = L.marker(
+                [11.667, 162.35],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_1831e826807d7dda388df3df8a59fba7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_9f09a4a094579a7af636731e735b6210.setIcon(icon_1831e826807d7dda388df3df8a59fba7);
+        
+    
+        var popup_af632ab9212395b65e9e6c4ca6077a05 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d73063d86ce043ca7a1acbaef85b53bd = $(`<div id="html_d73063d86ce043ca7a1acbaef85b53bd" style="width: 100.0%; height: 100.0%;"><b>Elder</b><br>Date: 06/27/1958<br>Yield: 880 kt</div>`)[0];
+            popup_af632ab9212395b65e9e6c4ca6077a05.setContent(html_d73063d86ce043ca7a1acbaef85b53bd);
+        
+
+        marker_9f09a4a094579a7af636731e735b6210.bindPopup(popup_af632ab9212395b65e9e6c4ca6077a05)
+        ;
+
+        
+    
+    
+            var marker_999643f0b8fca98b1b809759edad5dab = L.marker(
+                [11.667, 162.35],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_0744f9e535e13cb309f330a0f73bd81b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_999643f0b8fca98b1b809759edad5dab.setIcon(icon_0744f9e535e13cb309f330a0f73bd81b);
+        
+    
+        var popup_d103dde27951c76e39c5cd104c1a1457 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_41eaeb4cdcc9a10844c2378d2509efce = $(`<div id="html_41eaeb4cdcc9a10844c2378d2509efce" style="width: 100.0%; height: 100.0%;"><b>Oak</b><br>Date: 06/28/1958<br>Yield: 8.9 Mt</div>`)[0];
+            popup_d103dde27951c76e39c5cd104c1a1457.setContent(html_41eaeb4cdcc9a10844c2378d2509efce);
+        
+
+        marker_999643f0b8fca98b1b809759edad5dab.bindPopup(popup_d103dde27951c76e39c5cd104c1a1457)
+        ;
+
+        
+    
+    
+            var marker_b0940ef10b9340d858dfd28e84239d1a = L.marker(
+                [11.567, 165.383],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_a07eac78fe1c5f5298628c000c108970 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b0940ef10b9340d858dfd28e84239d1a.setIcon(icon_a07eac78fe1c5f5298628c000c108970);
+        
+    
+        var popup_7d0d6c16da4bd94713f517a7228b468e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bf2154def1f02806cf740f1ab164b135 = $(`<div id="html_bf2154def1f02806cf740f1ab164b135" style="width: 100.0%; height: 100.0%;"><b>Hickory</b><br>Date: 06/29/1958<br>Yield: 14 kt</div>`)[0];
+            popup_7d0d6c16da4bd94713f517a7228b468e.setContent(html_bf2154def1f02806cf740f1ab164b135);
+        
+
+        marker_b0940ef10b9340d858dfd28e84239d1a.bindPopup(popup_7d0d6c16da4bd94713f517a7228b468e)
+        ;
+
+        
+    
+    
+            var marker_f47d230bb26176bbc3ef9cc9c442bc0b = L.marker(
+                [11.667, 162.35],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_8e0ef26a6ea3834222612c2c6a1bc0f2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f47d230bb26176bbc3ef9cc9c442bc0b.setIcon(icon_8e0ef26a6ea3834222612c2c6a1bc0f2);
+        
+    
+        var popup_798b3bcf87e78edff4765b525f2e3ad5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7c8e90a9e2bbc172c7ea367aa2ece3b0 = $(`<div id="html_7c8e90a9e2bbc172c7ea367aa2ece3b0" style="width: 100.0%; height: 100.0%;"><b>Sequoia</b><br>Date: 07/01/1958<br>Yield: 220 kt</div>`)[0];
+            popup_798b3bcf87e78edff4765b525f2e3ad5.setContent(html_7c8e90a9e2bbc172c7ea367aa2ece3b0);
+        
+
+        marker_f47d230bb26176bbc3ef9cc9c442bc0b.bindPopup(popup_798b3bcf87e78edff4765b525f2e3ad5)
+        ;
+
+        
+    
+    
+            var marker_cf66d88d1fa4aacb261e10dbf0ef8355 = L.marker(
+                [11.567, 165.383],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_3f4b1846ae5188b1c39f224099749089 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_cf66d88d1fa4aacb261e10dbf0ef8355.setIcon(icon_3f4b1846ae5188b1c39f224099749089);
+        
+    
+        var popup_b8eba20b557d46e4c55f9331a1dac5b0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_de007067a435cb91838bba994a161e39 = $(`<div id="html_de007067a435cb91838bba994a161e39" style="width: 100.0%; height: 100.0%;"><b>Cedar</b><br>Date: 07/02/1958<br>Yield: 397 kt</div>`)[0];
+            popup_b8eba20b557d46e4c55f9331a1dac5b0.setContent(html_de007067a435cb91838bba994a161e39);
+        
+
+        marker_cf66d88d1fa4aacb261e10dbf0ef8355.bindPopup(popup_b8eba20b557d46e4c55f9331a1dac5b0)
+        ;
+
+        
+    
+    
+            var marker_ff1659a77446967665983ff94aee133f = L.marker(
+                [11.667, 162.35],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_5fc6896915100b35d6beb2c184ad5119 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ff1659a77446967665983ff94aee133f.setIcon(icon_5fc6896915100b35d6beb2c184ad5119);
+        
+    
+        var popup_871c3e8705ccc623a8bc7d0335d08bca = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3cfd2e02bc359e62c73754ef7873ed74 = $(`<div id="html_3cfd2e02bc359e62c73754ef7873ed74" style="width: 100.0%; height: 100.0%;"><b>Dogwood</b><br>Date: 07/05/1958<br>Yield: 9.3 Mt</div>`)[0];
+            popup_871c3e8705ccc623a8bc7d0335d08bca.setContent(html_3cfd2e02bc359e62c73754ef7873ed74);
+        
+
+        marker_ff1659a77446967665983ff94aee133f.bindPopup(popup_871c3e8705ccc623a8bc7d0335d08bca)
+        ;
+
+        
+    
+    
+            var marker_442daf893518024c2b5a0df1335302c9 = L.marker(
+                [11.567, 165.383],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_6f4e8194117e9c72e31f530e0ffdd91b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_442daf893518024c2b5a0df1335302c9.setIcon(icon_6f4e8194117e9c72e31f530e0ffdd91b);
+        
+    
+        var popup_d9d84ebc49a8ad123f35e5e9621e66cd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3ae05291a2905f2dd3d5c617c26408a5 = $(`<div id="html_3ae05291a2905f2dd3d5c617c26408a5" style="width: 100.0%; height: 100.0%;"><b>Poplar</b><br>Date: 07/12/1958<br>Yield: 0 kt</div>`)[0];
+            popup_d9d84ebc49a8ad123f35e5e9621e66cd.setContent(html_3ae05291a2905f2dd3d5c617c26408a5);
+        
+
+        marker_442daf893518024c2b5a0df1335302c9.bindPopup(popup_d9d84ebc49a8ad123f35e5e9621e66cd)
+        ;
+
+        
+    
+    
+            var marker_c92a8cb39cfc61869619d831acd79374 = L.marker(
+                [11.667, 162.35],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_e67217eb641e3601d48192f0068755ae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c92a8cb39cfc61869619d831acd79374.setIcon(icon_e67217eb641e3601d48192f0068755ae);
+        
+    
+        var popup_b5e6a4011166ac3110783b5861fdd63f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7359843686923603bf1ff8fef8ca7983 = $(`<div id="html_7359843686923603bf1ff8fef8ca7983" style="width: 100.0%; height: 100.0%;"><b>Scaevola</b><br>Date: 07/14/1958<br>Yield: 255 kt</div>`)[0];
+            popup_b5e6a4011166ac3110783b5861fdd63f.setContent(html_7359843686923603bf1ff8fef8ca7983);
+        
+
+        marker_c92a8cb39cfc61869619d831acd79374.bindPopup(popup_b5e6a4011166ac3110783b5861fdd63f)
+        ;
+
+        
+    
+    
+            var marker_e9ef210c6dc183e6031e7067c051668d = L.marker(
+                [11.667, 162.35],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_35b258d3da38c3dda8657f1f959f2a6c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e9ef210c6dc183e6031e7067c051668d.setIcon(icon_35b258d3da38c3dda8657f1f959f2a6c);
+        
+    
+        var popup_e18166ae628a41136a3f088a41957873 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_53085107d8a3d34e55f0ec1c30e2f0c2 = $(`<div id="html_53085107d8a3d34e55f0ec1c30e2f0c2" style="width: 100.0%; height: 100.0%;"><b>Pisonia</b><br>Date: 07/17/1958<br>Yield: 65 kt</div>`)[0];
+            popup_e18166ae628a41136a3f088a41957873.setContent(html_53085107d8a3d34e55f0ec1c30e2f0c2);
+        
+
+        marker_e9ef210c6dc183e6031e7067c051668d.bindPopup(popup_e18166ae628a41136a3f088a41957873)
+        ;
+
+        
+    
+    
+            var marker_215fb4828583079d6274acf9fcd67f45 = L.marker(
+                [11.567, 165.383],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_5d2622e2d3ef1d546e0a4699f1585cce = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_215fb4828583079d6274acf9fcd67f45.setIcon(icon_5d2622e2d3ef1d546e0a4699f1585cce);
+        
+    
+        var popup_ad9ec92dff6a8d596f8e823f8dd755e6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cda85fc8f10d73a69ed011bf8140d363 = $(`<div id="html_cda85fc8f10d73a69ed011bf8140d363" style="width: 100.0%; height: 100.0%;"><b>Juniper</b><br>Date: 07/22/1958<br>Yield: 202 kt</div>`)[0];
+            popup_ad9ec92dff6a8d596f8e823f8dd755e6.setContent(html_cda85fc8f10d73a69ed011bf8140d363);
+        
+
+        marker_215fb4828583079d6274acf9fcd67f45.bindPopup(popup_ad9ec92dff6a8d596f8e823f8dd755e6)
+        ;
+
+        
+    
+    
+            var marker_e0d1b216b79facc45b525aabc6e71511 = L.marker(
+                [11.667, 162.35],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_9bb04b66074f8bf3ac987efe996df59f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e0d1b216b79facc45b525aabc6e71511.setIcon(icon_9bb04b66074f8bf3ac987efe996df59f);
+        
+    
+        var popup_649142e6a87262ed360993781e6743e5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_91b1968013e05385822fc42f878aaaa2 = $(`<div id="html_91b1968013e05385822fc42f878aaaa2" style="width: 100.0%; height: 100.0%;"><b>Olive</b><br>Date: 07/22/1958<br>Yield: 2 Mt</div>`)[0];
+            popup_649142e6a87262ed360993781e6743e5.setContent(html_91b1968013e05385822fc42f878aaaa2);
+        
+
+        marker_e0d1b216b79facc45b525aabc6e71511.bindPopup(popup_649142e6a87262ed360993781e6743e5)
+        ;
+
+        
+    
+    
+            var marker_dbaf30ee8a9666a5b7eda02c9403bddc = L.marker(
+                [11.667, 162.35],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_c67c37b79bc883cd97876e1cc0e41e63 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_dbaf30ee8a9666a5b7eda02c9403bddc.setIcon(icon_c67c37b79bc883cd97876e1cc0e41e63);
+        
+    
+        var popup_1ac0af3710e85814322b659a0ca7e97f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_271f61915167f2f6a61f60dcb37d4d5e = $(`<div id="html_271f61915167f2f6a61f60dcb37d4d5e" style="width: 100.0%; height: 100.0%;"><b>Pine</b><br>Date: 07/26/1958<br>Yield: 3.8 Mt</div>`)[0];
+            popup_1ac0af3710e85814322b659a0ca7e97f.setContent(html_271f61915167f2f6a61f60dcb37d4d5e);
+        
+
+        marker_dbaf30ee8a9666a5b7eda02c9403bddc.bindPopup(popup_1ac0af3710e85814322b659a0ca7e97f)
+        ;
+
+        
+    
+    
+            var marker_e49b97ffd52d87f1579518f0d768338b = L.marker(
+                [12.62, 163.02],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_23ec60af63f7f38b73f75c40c12630df = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e49b97ffd52d87f1579518f0d768338b.setIcon(icon_23ec60af63f7f38b73f75c40c12630df);
+        
+    
+        var popup_9a09941b32fe869bbac81d3da6baea40 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5401a04d90b69c93c241f67784c9f3d5 = $(`<div id="html_5401a04d90b69c93c241f67784c9f3d5" style="width: 100.0%; height: 100.0%;"><b>Teak</b><br>Date: 08/01/1958<br>Yield: 0 kt</div>`)[0];
+            popup_9a09941b32fe869bbac81d3da6baea40.setContent(html_5401a04d90b69c93c241f67784c9f3d5);
+        
+
+        marker_e49b97ffd52d87f1579518f0d768338b.bindPopup(popup_9a09941b32fe869bbac81d3da6baea40)
+        ;
+
+        
+    
+    
+            var marker_32e20618a40847070e0c4f3cba3dd1c0 = L.marker(
+                [11.667, 162.35],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_3d75a0458c813a88c9970b8faf0a40e1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_32e20618a40847070e0c4f3cba3dd1c0.setIcon(icon_3d75a0458c813a88c9970b8faf0a40e1);
+        
+    
+        var popup_b3b1dc146fbe66f20c3b327102df75f2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_274c97d494e569053adf9f8aed27faa1 = $(`<div id="html_274c97d494e569053adf9f8aed27faa1" style="width: 100.0%; height: 100.0%;"><b>Quince</b><br>Date: 08/06/1958<br>Yield: 20 tons</div>`)[0];
+            popup_b3b1dc146fbe66f20c3b327102df75f2.setContent(html_274c97d494e569053adf9f8aed27faa1);
+        
+
+        marker_32e20618a40847070e0c4f3cba3dd1c0.bindPopup(popup_b3b1dc146fbe66f20c3b327102df75f2)
+        ;
+
+        
+    
+    
+            var marker_364785642a7cad76f6f2d83a54584a7e = L.marker(
+                [12.62, 163.02],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_243dae01910910e72ff5ea2921dccab9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_364785642a7cad76f6f2d83a54584a7e.setIcon(icon_243dae01910910e72ff5ea2921dccab9);
+        
+    
+        var popup_c7a7f4a978db76aeb37c7b603cfb0f4b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ad8eb56ef02fb642f167cc80fdfc9864 = $(`<div id="html_ad8eb56ef02fb642f167cc80fdfc9864" style="width: 100.0%; height: 100.0%;"><b>Orange</b><br>Date: 08/12/1958<br>Yield: 3.8 Mt</div>`)[0];
+            popup_c7a7f4a978db76aeb37c7b603cfb0f4b.setContent(html_ad8eb56ef02fb642f167cc80fdfc9864);
+        
+
+        marker_364785642a7cad76f6f2d83a54584a7e.bindPopup(popup_c7a7f4a978db76aeb37c7b603cfb0f4b)
+        ;
+
+        
+    
+    
+            var marker_a59760266f8b0261d38583b5ac17ab73 = L.marker(
+                [11.667, 162.35],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_fe7886ea8c0706b93c69ff2aa1fc603a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a59760266f8b0261d38583b5ac17ab73.setIcon(icon_fe7886ea8c0706b93c69ff2aa1fc603a);
+        
+    
+        var popup_d3e0fe218f6c734434dc6715b9c5c894 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_458a52f10a84a6f271a6d02124f9bf52 = $(`<div id="html_458a52f10a84a6f271a6d02124f9bf52" style="width: 100.0%; height: 100.0%;"><b>Fig</b><br>Date: 08/18/1958<br>Yield: 1-2 kt</div>`)[0];
+            popup_d3e0fe218f6c734434dc6715b9c5c894.setContent(html_458a52f10a84a6f271a6d02124f9bf52);
+        
+
+        marker_a59760266f8b0261d38583b5ac17ab73.bindPopup(popup_d3e0fe218f6c734434dc6715b9c5c894)
+        ;
+
+        
+    
+    
+            var marker_e1d660fc4214ea14d4c4cd22b4b55f19 = L.marker(
+                [38.5, -11.5],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_e26f6f13a1aad99b899917d6c472c654 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e1d660fc4214ea14d4c4cd22b4b55f19.setIcon(icon_e26f6f13a1aad99b899917d6c472c654);
+        
+    
+        var popup_019c0bac2af246cc830830aadd1c5990 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f67e810ec4f2b2026cff49e0a8ed2477 = $(`<div id="html_f67e810ec4f2b2026cff49e0a8ed2477" style="width: 100.0%; height: 100.0%;"><b>Argus I</b><br>Date: 08/27/1958<br>Yield: 1-2 kt</div>`)[0];
+            popup_019c0bac2af246cc830830aadd1c5990.setContent(html_f67e810ec4f2b2026cff49e0a8ed2477);
+        
+
+        marker_e1d660fc4214ea14d4c4cd22b4b55f19.bindPopup(popup_019c0bac2af246cc830830aadd1c5990)
+        ;
+
+        
+    
+    
+            var marker_9540a7a492b57fff595d849a2824e8f4 = L.marker(
+                [49.5, -8.2],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_a7b681ce063a4bd3d421b88b9d007c36 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_9540a7a492b57fff595d849a2824e8f4.setIcon(icon_a7b681ce063a4bd3d421b88b9d007c36);
+        
+    
+        var popup_b0ac9525d00fa923ad1bfa6dd4576ce5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1c5a2086eabb69c256ec5c937b394214 = $(`<div id="html_1c5a2086eabb69c256ec5c937b394214" style="width: 100.0%; height: 100.0%;"><b>Argus II</b><br>Date: 08/30/1958<br>Yield: 1-2 kt</div>`)[0];
+            popup_b0ac9525d00fa923ad1bfa6dd4576ce5.setContent(html_1c5a2086eabb69c256ec5c937b394214);
+        
+
+        marker_9540a7a492b57fff595d849a2824e8f4.bindPopup(popup_b0ac9525d00fa923ad1bfa6dd4576ce5)
+        ;
+
+        
+    
+    
+            var marker_36fb506736361ee4df3448caf1a2965d = L.marker(
+                [48.5, -9.7],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_be2a8054e6d2b201800c65fe636e5390 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_36fb506736361ee4df3448caf1a2965d.setIcon(icon_be2a8054e6d2b201800c65fe636e5390);
+        
+    
+        var popup_e4101a45d15fcfee881aef8bb4d298be = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aef3d5633bc7a9ae34c1fe817f483776 = $(`<div id="html_aef3d5633bc7a9ae34c1fe817f483776" style="width: 100.0%; height: 100.0%;"><b>Argus III</b><br>Date: 09/06/1958<br>Yield: 1-2 kt</div>`)[0];
+            popup_e4101a45d15fcfee881aef8bb4d298be.setContent(html_aef3d5633bc7a9ae34c1fe817f483776);
+        
+
+        marker_36fb506736361ee4df3448caf1a2965d.bindPopup(popup_e4101a45d15fcfee881aef8bb4d298be)
+        ;
+
+        
+    
+    
+            var marker_68e87c0e5697664eb04d7aa7fbad7cc8 = L.marker(
+                [37.05, -116.033],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_ae22913a8823a83e917c49a442cc6b1b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_68e87c0e5697664eb04d7aa7fbad7cc8.setIcon(icon_ae22913a8823a83e917c49a442cc6b1b);
+        
+    
+        var popup_afaf67362c407e55153f43e7955111c0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ad3c627af994ea33f300e6ab8e81edc9 = $(`<div id="html_ad3c627af994ea33f300e6ab8e81edc9" style="width: 100.0%; height: 100.0%;"><b>Otero</b><br>Date: 09/12/1958<br>Yield: 38 tons</div>`)[0];
+            popup_afaf67362c407e55153f43e7955111c0.setContent(html_ad3c627af994ea33f300e6ab8e81edc9);
+        
+
+        marker_68e87c0e5697664eb04d7aa7fbad7cc8.bindPopup(popup_afaf67362c407e55153f43e7955111c0)
+        ;
+
+        
+    
+    
+            var marker_c6de5977772557b20092befcd6d77736 = L.marker(
+                [37.05, -116.034],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_58c716cef6524d581948f17fb320119e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c6de5977772557b20092befcd6d77736.setIcon(icon_58c716cef6524d581948f17fb320119e);
+        
+    
+        var popup_6c9c4ef74bbd126e50a251cc59239531 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b2c9ff2b6ebfbaadb906bf73f7160379 = $(`<div id="html_b2c9ff2b6ebfbaadb906bf73f7160379" style="width: 100.0%; height: 100.0%;"><b>Bernalillo</b><br>Date: 09/17/1958<br>Yield: 15 tons</div>`)[0];
+            popup_6c9c4ef74bbd126e50a251cc59239531.setContent(html_b2c9ff2b6ebfbaadb906bf73f7160379);
+        
+
+        marker_c6de5977772557b20092befcd6d77736.bindPopup(popup_6c9c4ef74bbd126e50a251cc59239531)
+        ;
+
+        
+    
+    
+            var marker_d434ec0d005964ddaabb20e06ec8bc6a = L.marker(
+                [37.17, -116.045],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_06e0914a31e45943cadbec8017ee4fc4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d434ec0d005964ddaabb20e06ec8bc6a.setIcon(icon_06e0914a31e45943cadbec8017ee4fc4);
+        
+    
+        var popup_ffb8e24368971a79b1229582d6443d64 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4ba0d11cadd11bfbe26a0fbd8b458d40 = $(`<div id="html_4ba0d11cadd11bfbe26a0fbd8b458d40" style="width: 100.0%; height: 100.0%;"><b>Eddy</b><br>Date: 09/19/1958<br>Yield: 83 tons</div>`)[0];
+            popup_ffb8e24368971a79b1229582d6443d64.setContent(html_4ba0d11cadd11bfbe26a0fbd8b458d40);
+        
+
+        marker_d434ec0d005964ddaabb20e06ec8bc6a.bindPopup(popup_ffb8e24368971a79b1229582d6443d64)
+        ;
+
+        
+    
+    
+            var marker_520fa08ecd43418246b29b2c8cf5beeb = L.marker(
+                [37.049, -116.035],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_1624666e5cf379b780909f80e419ce85 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_520fa08ecd43418246b29b2c8cf5beeb.setIcon(icon_1624666e5cf379b780909f80e419ce85);
+        
+    
+        var popup_39cb53580b724baad2feddad8b608fdd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_72abb0b42959b9329508ad7909185e32 = $(`<div id="html_72abb0b42959b9329508ad7909185e32" style="width: 100.0%; height: 100.0%;"><b>Luna</b><br>Date: 09/21/1958<br>Yield: 1.5 tons</div>`)[0];
+            popup_39cb53580b724baad2feddad8b608fdd.setContent(html_72abb0b42959b9329508ad7909185e32);
+        
+
+        marker_520fa08ecd43418246b29b2c8cf5beeb.bindPopup(popup_39cb53580b724baad2feddad8b608fdd)
+        ;
+
+        
+    
+    
+            var marker_3bbee906ad387ec4b8dc561db68ffabb = L.marker(
+                [37.113, -116.121],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_4ac5cd7994e84fcfeff8cfb8f3076b2d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_3bbee906ad387ec4b8dc561db68ffabb.setIcon(icon_4ac5cd7994e84fcfeff8cfb8f3076b2d);
+        
+    
+        var popup_fda4cdb71c0754a45c49260980da26d3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_abdad5294f6ac7ccf568e9290616a76b = $(`<div id="html_abdad5294f6ac7ccf568e9290616a76b" style="width: 100.0%; height: 100.0%;"><b>Mercury</b><br>Date: 09/23/1958<br>Yield: 2 tons</div>`)[0];
+            popup_fda4cdb71c0754a45c49260980da26d3.setContent(html_abdad5294f6ac7ccf568e9290616a76b);
+        
+
+        marker_3bbee906ad387ec4b8dc561db68ffabb.bindPopup(popup_fda4cdb71c0754a45c49260980da26d3)
+        ;
+
+        
+    
+    
+            var marker_4b25e57bfedfb3b80194a0b8eaa83979 = L.marker(
+                [37.05, -116.031],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_3ae05cc9d554230a17574ed6c1569041 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_4b25e57bfedfb3b80194a0b8eaa83979.setIcon(icon_3ae05cc9d554230a17574ed6c1569041);
+        
+    
+        var popup_e073fd695e2bfc31050e8675caa31879 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_52bf3b56351d856822b19091832e4a05 = $(`<div id="html_52bf3b56351d856822b19091832e4a05" style="width: 100.0%; height: 100.0%;"><b>Valencia</b><br>Date: 09/26/1958<br>Yield: 2 tons</div>`)[0];
+            popup_e073fd695e2bfc31050e8675caa31879.setContent(html_52bf3b56351d856822b19091832e4a05);
+        
+
+        marker_4b25e57bfedfb3b80194a0b8eaa83979.bindPopup(popup_e073fd695e2bfc31050e8675caa31879)
+        ;
+
+        
+    
+    
+            var marker_df61dfa4e6679d8781804d33a5a4f505 = L.marker(
+                [37.193, -116.201],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_65666cf0833623587bd4d6c5622de2a9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_df61dfa4e6679d8781804d33a5a4f505.setIcon(icon_65666cf0833623587bd4d6c5622de2a9);
+        
+    
+        var popup_66c67ee3bcbf4249294d7b7925556829 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_658d8d583aae2e5f4a1a224d927a3286 = $(`<div id="html_658d8d583aae2e5f4a1a224d927a3286" style="width: 100.0%; height: 100.0%;"><b>Mars</b><br>Date: 09/28/1958<br>Yield: 13 tons</div>`)[0];
+            popup_66c67ee3bcbf4249294d7b7925556829.setContent(html_658d8d583aae2e5f4a1a224d927a3286);
+        
+
+        marker_df61dfa4e6679d8781804d33a5a4f505.bindPopup(popup_66c67ee3bcbf4249294d7b7925556829)
+        ;
+
+        
+    
+    
+            var marker_e5071cb3f4ce68db166b840f0dbca971 = L.marker(
+                [37.17, -116.045],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_3749be813671f7842d253d904809322d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e5071cb3f4ce68db166b840f0dbca971.setIcon(icon_3749be813671f7842d253d904809322d);
+        
+    
+        var popup_8a4029806978da8e3a159e34b95bd2c4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5a6be768bd4272f765f107a2bd8adec0 = $(`<div id="html_5a6be768bd4272f765f107a2bd8adec0" style="width: 100.0%; height: 100.0%;"><b>Mora</b><br>Date: 09/29/1958<br>Yield: 2 kt</div>`)[0];
+            popup_8a4029806978da8e3a159e34b95bd2c4.setContent(html_5a6be768bd4272f765f107a2bd8adec0);
+        
+
+        marker_e5071cb3f4ce68db166b840f0dbca971.bindPopup(popup_8a4029806978da8e3a159e34b95bd2c4)
+        ;
+
+        
+    
+    
+            var marker_be50383369aac8710009cbe04e063b56 = L.marker(
+                [37.05, -116.033],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_0795c30867b18183783bacadda0dc980 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_be50383369aac8710009cbe04e063b56.setIcon(icon_0795c30867b18183783bacadda0dc980);
+        
+    
+        var popup_e3e9ae91ca36d59b7b9f5ad31fe5d0f4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6edff976550484c95ed09dbc1cb91dea = $(`<div id="html_6edff976550484c95ed09dbc1cb91dea" style="width: 100.0%; height: 100.0%;"><b>Colfax</b><br>Date: 10/05/1958<br>Yield: 5.5 tons</div>`)[0];
+            popup_e3e9ae91ca36d59b7b9f5ad31fe5d0f4.setContent(html_6edff976550484c95ed09dbc1cb91dea);
+        
+
+        marker_be50383369aac8710009cbe04e063b56.bindPopup(popup_e3e9ae91ca36d59b7b9f5ad31fe5d0f4)
+        ;
+
+        
+    
+    
+            var marker_5333a44d294d2c5fa316372c687f7f4a = L.marker(
+                [37.17, -116.045],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_2097751fd4bad9fd15a399d55c5ea9b3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_5333a44d294d2c5fa316372c687f7f4a.setIcon(icon_2097751fd4bad9fd15a399d55c5ea9b3);
+        
+    
+        var popup_0dfe8d050324c86ed66867bc43a2d14f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c51c20ab0cf705df6f19b1c7d2476b07 = $(`<div id="html_c51c20ab0cf705df6f19b1c7d2476b07" style="width: 100.0%; height: 100.0%;"><b>Hidalgo</b><br>Date: 10/05/1958<br>Yield: 22 kt</div>`)[0];
+            popup_0dfe8d050324c86ed66867bc43a2d14f.setContent(html_c51c20ab0cf705df6f19b1c7d2476b07);
+        
+
+        marker_5333a44d294d2c5fa316372c687f7f4a.bindPopup(popup_0dfe8d050324c86ed66867bc43a2d14f)
+        ;
+
+        
+    
+    
+            var marker_da0bdc5ed7e8e467fd69dbc3550eed94 = L.marker(
+                [37.195, -116.201],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_de7dab1f6efd8a454050e1580323211b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_da0bdc5ed7e8e467fd69dbc3550eed94.setIcon(icon_de7dab1f6efd8a454050e1580323211b);
+        
+    
+        var popup_4aecc30b67b63d3b4e4f58f9e9f9e243 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_981091b02d2bc1cdc7f950d7815d2a53 = $(`<div id="html_981091b02d2bc1cdc7f950d7815d2a53" style="width: 100.0%; height: 100.0%;"><b>Tamalpais</b><br>Date: 10/08/1958<br>Yield: 79 tons</div>`)[0];
+            popup_4aecc30b67b63d3b4e4f58f9e9f9e243.setContent(html_981091b02d2bc1cdc7f950d7815d2a53);
+        
+
+        marker_da0bdc5ed7e8e467fd69dbc3550eed94.bindPopup(popup_4aecc30b67b63d3b4e4f58f9e9f9e243)
+        ;
+
+        
+    
+    
+            var marker_9aa12f7b508a51d5426b5d1ea53caa71 = L.marker(
+                [37.17, -116.045],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_a4d3d5bbd775af874c84ed06d53edb44 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_9aa12f7b508a51d5426b5d1ea53caa71.setIcon(icon_a4d3d5bbd775af874c84ed06d53edb44);
+        
+    
+        var popup_7be82822cc66686c3fe74e612e3e8281 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_350c114bc994367e5cf9c5dc6921606e = $(`<div id="html_350c114bc994367e5cf9c5dc6921606e" style="width: 100.0%; height: 100.0%;"><b>Quay</b><br>Date: 10/10/1958<br>Yield: 1.4 kt</div>`)[0];
+            popup_7be82822cc66686c3fe74e612e3e8281.setContent(html_350c114bc994367e5cf9c5dc6921606e);
+        
+
+        marker_9aa12f7b508a51d5426b5d1ea53caa71.bindPopup(popup_7be82822cc66686c3fe74e612e3e8281)
+        ;
+
+        
+    
+    
+            var marker_2179a02b758e073c95a9a15402395fe8 = L.marker(
+                [37.194, -116.201],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_60eb1d744556e239910788fb3e32dd1c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_2179a02b758e073c95a9a15402395fe8.setIcon(icon_60eb1d744556e239910788fb3e32dd1c);
+        
+    
+        var popup_ecd68f620ed7159fe144ae02cd7fe999 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_56826bda5afa8f21359bae6ca3c3b0b9 = $(`<div id="html_56826bda5afa8f21359bae6ca3c3b0b9" style="width: 100.0%; height: 100.0%;"><b>Lea</b><br>Date: 10/13/1958<br>Yield: 115 tons</div>`)[0];
+            popup_ecd68f620ed7159fe144ae02cd7fe999.setContent(html_56826bda5afa8f21359bae6ca3c3b0b9);
+        
+
+        marker_2179a02b758e073c95a9a15402395fe8.bindPopup(popup_ecd68f620ed7159fe144ae02cd7fe999)
+        ;
+
+        
+    
+    
+            var marker_b5504e0c5a0c25acf486f8865a2e2a4a = L.marker(
+                [37.083, -116.343],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_bcb1ddcd9abd196ede066c80ecc6416e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b5504e0c5a0c25acf486f8865a2e2a4a.setIcon(icon_bcb1ddcd9abd196ede066c80ecc6416e);
+        
+    
+        var popup_b3b75865322cde10007b50248eb229fa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_514b2426dc817de9db3b32af3a733487 = $(`<div id="html_514b2426dc817de9db3b32af3a733487" style="width: 100.0%; height: 100.0%;"><b>Neptune</b><br>Date: 10/14/1958<br>Yield: 1.2 tons</div>`)[0];
+            popup_b3b75865322cde10007b50248eb229fa.setContent(html_514b2426dc817de9db3b32af3a733487);
+        
+
+        marker_b5504e0c5a0c25acf486f8865a2e2a4a.bindPopup(popup_b3b75865322cde10007b50248eb229fa)
+        ;
+
+        
+    
+    
+            var marker_aa80f3188f8b68671648d012012daa4e = L.marker(
+                [37.184, -116.202],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_5978bb3cbc0e0dc8308d2d6342c7caf7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_aa80f3188f8b68671648d012012daa4e.setIcon(icon_5978bb3cbc0e0dc8308d2d6342c7caf7);
+        
+    
+        var popup_b09e9203f33bec57f2f56bd427807b45 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9c6ffc932bede5aa1900eb249bec6dcb = $(`<div id="html_9c6ffc932bede5aa1900eb249bec6dcb" style="width: 100.0%; height: 100.0%;"><b>Hamilton</b><br>Date: 10/15/1958<br>Yield: 5 kt</div>`)[0];
+            popup_b09e9203f33bec57f2f56bd427807b45.setContent(html_9c6ffc932bede5aa1900eb249bec6dcb);
+        
+
+        marker_aa80f3188f8b68671648d012012daa4e.bindPopup(popup_b09e9203f33bec57f2f56bd427807b45)
+        ;
+
+        
+    
+    
+            var marker_aff1219325cc97bee3928db82fdb8b9b = L.marker(
+                [37.148, -116.067],
+                {}
+            ).addTo(marker_cluster_15d114cbf07dae7289fdd7502d062208);
+        
+    
+            var icon_01b96b497fe9ecab6a92eb08d8c16340 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_aff1219325cc97bee3928db82fdb8b9b.setIcon(icon_01b96b497fe9ecab6a92eb08d8c16340);
+        
+    
+        var popup_752bc7fe7e85bca45e776f81499d889e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8ce29f63ab93a80db823c7b5f34b33c6 = $(`<div id="html_8ce29f63ab93a80db823c7b5f34b33c6" style="width: 100.0%; height: 100.0%;"><b>Logan</b><br>Date: 10/16/1958<br>Yield: nan</div>`)[0];
+            popup_752bc7fe7e85bca45e776f81499d889e.setContent(html_8ce29f63ab93a80db823c7b5f34b33c6);
+        
+
+        marker_aff1219325cc97bee3928db82fdb8b9b.bindPopup(popup_752bc7fe7e85bca45e776f81499d889e)
+        ;
+
+        
+    
+</script>
+</html>
